@@ -30,7 +30,13 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.btn_buy').click(function() {
-		window.location = 'account/orders.html';
+	$('.btn_checkout').click(function() {
+		window.location = 'checkout.html';
 	});
+
+	$('.btn_buy').click(function(event) {
+		event.preventDefault();
+		window.location = 'orders.html';
+	});
+
 });

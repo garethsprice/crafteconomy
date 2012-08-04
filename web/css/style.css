@@ -196,3 +196,19 @@ input {
 	box-shadow: 2px 2px 10px #333;
 	filter: dropshadow(color=#333, offx=5, offy=0);
 }
+
+table {
+	background-color: #fff;
+}
+td, th {
+	padding: 10px;
+}
+
+th {
+	font-size: large;
+	text-align: left;
+}
+
+td {
+	font-size: large;
+}
