@@ -16,9 +16,9 @@
   <meta property="og:image" content="#">
 	
 	<link href="<?php print site_url('assets/themes/crafteconomy/stylesheets/screen.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-	<script src="<?php print site_url('assets/themes/crafteconomy/javascripts/crafteconomy.js'); ?>"></script>
+  <script src="<?php print site_url('assets/themes/crafteconomy/js/jquery-1.7.2.min.js'); ?>"></script>
+  <script src="<?php print site_url('assets/themes/crafteconomy/js/jquery.validate.min.js'); ?>"></script>
+	<script src="<?php print site_url('assets/themes/crafteconomy/js/crafteconomy.js'); ?>"></script>
 	
 	<?php echo $template['metadata']; ?>
 	

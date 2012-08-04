@@ -15,4 +15,10 @@ class Products extends MY_Controller {
     $this->template->title('View an individual product');
   	$this->template->build('products/view', $data);
 	}
+	
+	public function sell()
+	{
+    $this->template->title('View an individual product');
+  	$this->template->build('products/view', $data);	  
+	}
 }
