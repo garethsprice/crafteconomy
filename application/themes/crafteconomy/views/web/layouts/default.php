@@ -80,7 +80,7 @@
   				<div class=row>
   					<div class=span5>
   						<h3>Contact information</h3>
-  						<p>CraftEconomy<br>
+  						<p>Craft Economy<br>
   							500 7th Ave<br>
   							New York, NY 10018<br>
   					</div>
@@ -106,7 +106,7 @@
   		    	  <div class="container">
   				<div class=row>
   					<div class="span12">
-  						<p>&copy; CraftEconomy 2012 All Rights Reserved - <a href="#">Terms of Service</a></p>
+  						<p>&copy; CraftEconomy 2012 All Rights Reserved - <a href="<?php print site_url('terms'); ?>">Terms of Service</a></p>
   					</div>
   				</div>
   		</div>
