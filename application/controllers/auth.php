@@ -655,6 +655,14 @@ class Auth extends MY_Controller {
 				'type' => 'text',
 				'value' => $this->form_validation->set_value('phone'),
 			);
+			$this->data['bio'] = array('name' => 'bio',
+				'id' => 'bio',
+				'type' => 'textarea',
+				'class' => 'input-xlarge',
+				'rows' => '5',
+				'cols' => '80',
+				'value' => $this->form_validation->set_value('bio'),
+			);
 			$this->template->append_metadata('<script src="//api.filepicker.io/v0/filepicker.js"></script>');
 			$this->data['photo'] = array('name' => 'photo',
 				'id' => 'photo',

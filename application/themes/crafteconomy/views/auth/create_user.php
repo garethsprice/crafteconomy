@@ -114,7 +114,7 @@
           <div class="control-group">
             <label class="control-label" for="password">Maker's Bio</label>
             <div class="controls">
-              <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+              <?php print form_textarea($bio); ?>
               <p class="help-block">Describe yourself and your business, a more personal description helps buyers to connect with you.</p>
             </div>
           </div>
