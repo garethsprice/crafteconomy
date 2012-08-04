@@ -14,7 +14,7 @@
   
 	<!-- Zhe fonts und styles -->
 	<link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
-	<link href="<?php print site_url('assets/themes/crafteconomy/css/bootstrap.min.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="//current.bootstrapcdn.com/bootstrap-v204/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css" />
 	<link href="<?php print site_url('assets/themes/crafteconomy/css/lightbox.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="<?php print site_url('assets/themes/crafteconomy/css/style.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
 
@@ -32,12 +32,13 @@
 
 <body> 
   
+  <div class="container">
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   	<!-- Zhe navigation -->
-  	<header class="container header">
-  		<div class=row>
+  	<header class="header">
+  		<div class="row">
   			<!-- Zhe Logo & name -->
-  			<div class=span4>
+  			<div class="span4">
   				<h1>
   				  <a href="/">
     					<img src="<?php print site_url('assets/themes/crafteconomy/img/logo.png'); ?>" alt="logo" id="logo">
@@ -50,49 +51,50 @@
   		</div>
   	</header>
   
-  <article class="container">
-  <?php echo $template['body']; ?>
-  </article>
+    <article>
+    <?php echo $template['body']; ?>
+    </article>
+	</div> <!-- end container -->
   
-	<footer class=footer>
-		<div class=top>
-			<div class=container>
-				<div class=row>
-					<div class=span5>
-						<h3>Contact information</h3>
-						<p>CraftEconomy<br>
-							500 7th Ave<br>
-							New York, NY 10018<br>
-					</div>
-					<div class=span7>
-						<h3>Sign up for the newsletter!</h3>
-						<p>If you want to stay up to date on updates and discounts, sign up!</p>
-						<form name="ccoptin" action="http://visitor.r20.constantcontact.com/d.jsp" target="_blank" method="post" class="form-horizontal">
-							<div class="control-group">
-								<div class="input-append input-prepend">
-									<span class=add-on>@</span><input class="span4" type="text" size="16" name="ea"><input class="btn" type="submit" value="sign up">
-								</div>
-							</div>
-							<img src="https://imgssl.constantcontact.com/ui/images1/safe_subscribe_logo.gif" border="0" width="168" height="14" alt=""/>
-							<input type="hidden" name="llr" value="qhmwwlkab">
-              <input type="hidden" name="m" value="1110641946864">
-              <input type="hidden" name="p" value="oi">
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class=bottom>
-			<div class=container>
-				<div class=row>
-					<div class="span12">
-						<p>&copy; CraftEconomy 2012 All Rights Reserved - <a href="#">Terms of Service</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	
+  	<footer class=footer>
+  		<div class=top>
+  		    	  <div class="container">
+  				<div class=row>
+  					<div class=span5>
+  						<h3>Contact information</h3>
+  						<p>CraftEconomy<br>
+  							500 7th Ave<br>
+  							New York, NY 10018<br>
+  					</div>
+  					<div class=span7>
+  						<h3>Sign up for the newsletter!</h3>
+  						<p>If you want to stay up to date on updates and discounts, sign up!</p>
+  						<form name="ccoptin" action="http://visitor.r20.constantcontact.com/d.jsp" target="_blank" method="post" class="form-horizontal">
+  							<div class="control-group">
+  								<div class="input-append input-prepend">
+  									<span class=add-on>@</span><input class="span4" type="text" size="16" name="ea"><input class="btn" type="submit" value="sign up">
+  								</div>
+  							</div>
+  							<img src="https://imgssl.constantcontact.com/ui/images1/safe_subscribe_logo.gif" border="0" width="168" height="14" alt=""/>
+  							<input type="hidden" name="llr" value="qhmwwlkab">
+                <input type="hidden" name="m" value="1110641946864">
+                <input type="hidden" name="p" value="oi">
+  						</form>
+  					</div>
+  				</div>
+  				</div>
+  		</div>
+  		<div class=bottom>
+  		    	  <div class="container">
+  				<div class=row>
+  					<div class="span12">
+  						<p>&copy; CraftEconomy 2012 All Rights Reserved - <a href="#">Terms of Service</a></p>
+  					</div>
+  				</div>
+  		</div>
+  		</div>
+  	</footer>
+
 	<!-- JS & bottom like zhe pro's -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="<?php print site_url('assets/themes/crafteconomy/js/libs/bootstrap.min.js'); ?>"></script>

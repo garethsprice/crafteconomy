@@ -5,21 +5,21 @@
 			<!-- Carousel items -->
 			<div class=carousel-inner>
 				<div class="active item">
-				<img src="/assets/themes/crafteconomy/img/carousel/normal/1.jpg" alt="">
+				<img src="/assets/themes/crafteconomy/img/carousel/normal/1.jpg" width=1180 alt="">
 					<div class="carousel-caption align-right">
 						<h1>Sunil has no </h1>
 						<h1>internet access.</h1>
 					</div>
 				</div>
 				<div class="item">
-					<img src="/assets/themes/crafteconomy/img/carousel/normal/3.jpg" alt="">
+					<img src="/assets/themes/crafteconomy/img/carousel/normal/2.jpg" width=1180 alt="">
 					<div class=carousel-caption>
 						<h1>All Sunil has is</h1> 
 						<h1>a craft and a cellphone.</h1>
 					</div>
 				</div>
 				<div class="item">
-					<img src="/assets/themes/crafteconomy/img/carousel/normal/4.jpg" alt="">
+					<img src="/assets/themes/crafteconomy/img/carousel/normal/3.jpg" width=1180 alt="">
 					<div class="carousel-caption align-right">
 						<h1>CraftEconomy connects </h1>
 						<h1>Sunil to global markets</h1>
