@@ -37,8 +37,8 @@
   			</div> <!-- /control-group -->
 				
   			<div class="form-actions">
-  				<button type="submit" class="btn btn-primary">Change</button> 
-  				<a class="btn" href="javascript:history.back()">Cancel</a>
+  				<button type="submit" class="btn btn-large btn-primary">Change</button> 
+  				<a class="btn btn-large" href="javascript:history.back()">Cancel</a>
   			</div> <!-- /form-actions -->
     	</fieldset>
     <?php echo form_close();?>

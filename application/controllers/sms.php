@@ -1,7 +1,7 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
 
 class Sms extends MY_Controller {
-  public $login_required = TRUE;
+  public $login_required = FALSE;
   
 	public function receive()
 	{	

@@ -46,7 +46,7 @@ class MY_Controller extends CI_Controller {
     $active = ltrim($_SERVER['REQUEST_URI'], '/');
     
     $this->menu->container_tag_id = 'main-nav';
-    $this->menu->container_tag_class = 'nav nav-pills pull-right span-8';
+    $this->menu->container_tag_class = 'nav nav-pills pull-right';
     $menu = $this->menu->render($nav, $active, NULL, 'basic');
     $this->template->set('main_nav', $menu);
   }

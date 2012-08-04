@@ -1,5 +1,5 @@
 <?php
-class User_logs_model extends CI_Model {
+class User_logs extends CI_Model {
   public function __construct() {
     $this->load->database();
   }
@@ -10,7 +10,7 @@ class User_logs_model extends CI_Model {
   public function write($text) {
   	$data['log_message'] = $text;
   	$DateOfRequest = date("Y-m-d H:i:s");
-  	$data['timestamp'] = $DateOfRequest;
+  	$data['date_submitted'] = $DateOfRequest;
 		return $this->db->insert('user_logs', $data);
 	}
 }
