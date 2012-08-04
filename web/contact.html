@@ -1,0 +1,216 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<!-- Data about Data, so meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<title>YourCompany</title>
+  
+	<!-- Zhe fonts und styles -->
+	<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Le Favicon and zhe lame apple stuffz -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+
+	<script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<!-- Zhe navigation -->
+	<header class="container header">
+		<div class=row>
+			<!-- Zhe Logo & name -->
+			<div class=span4>
+				<h1>
+					<img src="img/logo.png" alt="logo" id="logo">
+					YourCompany
+				</h1>
+			</div>
+			<!-- Menu & Search -->
+			<nav class=span8>
+				<form class="form-horizontal pull-right">
+					<div class="control-group">
+						<div class="input-append input-prepend">
+							<span class=add-on><i class=icon-search></i></span><input class=span2 type=text size=16><button class=btn type=button>search</button>
+						</div>
+					</div>
+				</form>
+				<ul class="nav nav-pills pull-right">
+					<li><a href=index.html>Home</a></li>
+					<li><a href=products.html>Products</a></li>
+					<li><a href=about.html>About Us</a></li>
+					<li class=active>
+						<a href=contact.html>Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<article class=container>
+		<section class="row gewgleBox">
+			<div class=span12>
+				<!-- The gewgle mapz on the top -->
+				<iframe width="100%" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.google.nl/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=google+inc&amp;aq=&amp;sll=52.469397,5.509644&amp;sspn=5.522543,13.73291&amp;ie=UTF8&amp;hq=google+inc&amp;hnear=&amp;radius=15000&amp;t=m&amp;ll=42.476932,-83.246112&amp;spn=0.071946,0.071946&amp;output=embed"></iframe>
+			</div>
+		</section>
+		<section class="row">
+			<!-- four nice small boxes filled with important things -->
+			<div class=span12>
+				<header class="page-header">
+					<h1>
+						Where we are
+						<small>you're free to visit!</small>
+					</h1>
+				</header>
+			</div>
+			<div class="span8">
+				<h2>Our contact information</h2>
+				<p>Some Company<br>
+					A Street 2158<br>
+					2525ZIP Somewhere<br>
+					phone: 12[3] 4567890<br>
+					email: fake@somecompany.com</p>
+				<h2>Some story about contact</h2>
+				<p>Duis mattis tortor vitae sem hendrerit viverra. Vestibulum diam metus, aliquam sed lobortis sit amet, pellentesque non mi. Sed nisl sapien, vulputate ut porta eu, interdum in ante. Integer scelerisque, nisl eget eleifend congue, quam nibh volutpat nibh, sit amet pellentesque nisl orci at nisi.</p>
+				<p>Mauris lobortis gravida mauris, vel vestibulum quam dignissim ac. Vestibulum enim augue, feugiat sit amet auctor ullamcorper, placerat non erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent orci ipsum.</p>
+			</div>
+			<div class=span4>
+				<!-- ALL the fancy twitter stuff = here -->
+				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'search',
+				  search: 'Webdesign',
+				  interval: 5000,
+				  title: 'The talking never stops',
+				  subject: 'Search on webdesign',
+				  width: 'auto',
+				  height: 300,
+				  theme: {
+					 shell: {
+						background: '#007100',
+						color: '#ffffff'
+					 },
+					 tweets: {
+						background: '#ffffff',
+						color: '#444444',
+						links: '#006000'
+					 }
+				  },
+				  features: {
+					 scrollbar: false,
+					 loop: true,
+					 live: true,
+					 behavior: 'default'
+				  }
+				}).render().start();
+				</script>
+			</div>
+		</section>
+		<section class="row contactBox">
+			<!-- some text & a twitter unit -->
+			<div class=span12>
+				<header class="page-header">
+					<h1>
+						Instant contact
+						<small>send us an email</small>
+					</h1>
+				</header>
+				<form method=post class=form-horizontal>
+					<fieldset>
+						<div class=control-group>
+							<label class="control-label" for="input01">E-mail address</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" id="input01">
+							</div>
+						</div>
+						<div class=control-group>
+							<label class="control-label" for="input02">Subject</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" id="input02">
+							</div>
+						</div>
+						<div class=control-group>
+							<label class="control-label" for="input03">Message</label>
+							<div class="controls">
+								<textarea class="input-xlarge" rows=9 id="input03" style="width: 700px;">
+								</textarea>
+							</div>
+						</div>
+						<div class=control-group>
+							<div class="controls">
+								<input type="submit" class="btn btn-large" value="Send!">
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</section>
+	</article>
+
+	<footer class=footer>
+		<div class=top>
+			<div class=container>
+				<div class=row>
+					<div class=span5>
+						<h3>Contact information</h3>
+						<p>Some Company<br>
+							A Street 2158<br>
+							2525ZIP Somewhere<br>
+							phone: 12[3] 4567890<br>
+							email: fake@somecompany.com</p>
+					</div>
+					<div class=span7>
+						<h3>Sign up for the newsletter!</h3>
+						<p>If you want to stay up to date on updates and discounts, sign up!</p>
+						<form class="form-horizontal">
+							<div class="control-group">
+								<div class="input-append input-prepend">
+									<span class=add-on>@</span><input class=span4 type=text size=16><button class=btn type=button>sign up</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class=bottom>
+			<div class=container>
+				<div class=row>
+					<div class="span12">
+						<p>&copy; YourCompany 2011-2012 all rights reserved - <a href="#">Terms of Service</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- JS & bottom like zhe pro's -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/libs/lightbox.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+	<!-- Google analytics snippet, remove it when you dont use GA -->
+	<script>
+		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
+</html>

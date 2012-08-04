@@ -1,0 +1,169 @@
+/* General Stuffs */
+body {
+	background: url("../img/gplay.png") repeat-x;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+	color: #007100;
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+h2 {
+	margin-bottom: 8px;
+}
+
+a, p, li {
+	font-size: 16px;
+}
+
+.align-right {
+	text-align: right;	
+}
+
+.page-header {
+	margin-top: 40px;
+}
+
+.page-header small {
+	margin-left: 4px;
+}
+
+/* menu und logo */
+header.header {
+	padding-top: 30px;
+}
+
+header.header div.control-group {
+	margin: 2px 0 0 20px;
+}
+
+img#logo {
+	height: 60px;
+	width: 60px;
+	float: left;
+	margin: -7px 10px 0 0;
+}
+
+/* Le nav */
+.nav .active a {
+	background: #007100;
+	color: #fff;
+}
+
+.nav .active a:hover {
+	background: #008200;
+}
+
+.nav a:hover {
+	background: #08aa08;
+	color: #007100;
+}
+
+header.header div.control-group {
+	margin-top: 3px;
+}
+
+/* imageBox */
+div.carousel {
+	margin-top: 20px;
+}
+
+a.carousel-control {
+	background-color: #aaa;
+	border-color: #fff;
+	color: #fff;
+}
+
+div.carousel-caption {
+	background: none;
+	top: 0px;
+	padding: 120px 120px 0 120px;
+}
+
+div.carousel-caption h1,
+div.carousel-caption p {
+	color: #fff;
+	margin-bottom: 20px;
+
+	text-shadow: 5px 0px 10px #333;
+	filter: dropshadow(color=#333, offx=5, offy=0);
+}
+
+div.carousel-caption h1 {
+	font-size: 50px;
+}
+
+div.carousel-caption p {
+	font-size: 20px;
+}
+
+/* featuredBox */
+section.featured .span6 {
+	margin-bottom: 5px;
+}
+
+section.featured .span6 p {
+	font-size: 18px;
+}
+
+section.featured .span6 i {
+	display: block;
+	float: left;
+	width: 60px;
+	height: 60px;
+	background: url('../img/icons.png');
+	margin: 10px 20px 45px 10px;
+}
+
+section.featured .span6 i.gear {
+	background-position: -60px 0px;
+}
+
+section.featured .span6 i.eye {
+	background-position: 0px -60px;
+}
+
+section.featured .span6 i.case {
+	background-position: -60px -60px;
+}
+
+/* MediaBox */
+a.thumbnail:hover {
+	border-color: #007100;
+	-webkit-box-shadow: 0 1px 4px rgba(0,105,0,0.25);
+	-moz-box-shadow: 0 1px 4px rgba(0,105,0,0.25);
+	box-shadow: 0 1px 4px rgba(0,105,0,0.25);
+}
+
+/* gewglBox */
+section.gewgleBox iframe {
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+/* socialStuff */
+.twtr-tweet-text p,
+.twtr-tweet-text a {
+	font-size: 14px;
+}
+
+/* footar */
+footer.footer div.top {
+	min-height: 120px;
+	margin-top: 80px;
+	padding: 20px 0;
+	background-color: #eee;
+}
+
+footer.footer div.bottom {
+	padding: 15px 0 5px 0;
+	background-color: #ccc;
+	text-align: right;
+}
