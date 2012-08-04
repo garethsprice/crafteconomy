@@ -362,5 +362,11 @@ $config['proxy_ips'] = '';
 */
 $config['encryption_key'] = "CR4FT3CONOMY";
 
+/**
+ * CraftEconomy specific stuff
+ */
+$config['filepicker_api_key'] = 'AIYY7zJrPSbS5GPjIzVuBz';
+$config['filepicker_option_services'] = 'COMPUTER,WEBCAM,URL,IMAGE_SEARCH,GMAIL,GOOGLE_DRIVE,DROPBOX';
+
 /* End of file config.php */
 /* Location: ./application/config/config.php */
