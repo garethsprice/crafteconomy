@@ -31,7 +31,7 @@ class Sms extends MY_Controller {
 	  	$action = 'cancel';
 	  	$order_id = $exp[1];
 	  	$reason = $exp[2];
-	  	$response_message = "We're sorry you had to cancel."
+	  	$response_message = "We're sorry you had to cancel.";
 	  } elseif (preg_match('/SENT/i', $sms_body)) {
 	  	$exp = $explode(' ', $sms_body, 3);
 	  	$action = 'sent';
