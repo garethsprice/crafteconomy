@@ -212,3 +212,16 @@ th {
 td {
 	font-size: large;
 }
+
+article form {
+	box-shadow: 1px 1px 4px #eee;	
+	background-image: url('../img/subtle_dots.png');
+	background-repeat:repeat;
+	padding-top: 30px;
+	margin-right: 30px;
+	border-radius: 15px;
+}
+
+.form-actions {
+	background-color: transparent;
+}
