@@ -18,4 +18,25 @@ $(document).ready(function() {
     		$("#confirmphone").hide();
 		} 
 	});
+
+	$('.btn_more_info').click(function() {
+		var more_info = $(this).parents('.caption').children('.more-info').toggle();
+		if ($(this).html() === "More info") {
+			$(this).html('Less info');
+			$(this).removeClass('btn-primary');
+		} else {
+			$(this).html('More info');
+			$(this).addClass('btn-primary');
+		}
+	});
+
+	$('.btn_checkout').click(function() {
+		window.location = 'checkout.html';
+	});
+
+	$('.btn_buy').click(function(event) {
+		event.preventDefault();
+		window.location = 'orders.html';
+	});
+
 });
