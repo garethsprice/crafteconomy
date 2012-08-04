@@ -167,3 +167,12 @@ footer.footer div.bottom {
 	background-color: #ccc;
 	text-align: right;
 }
+
+label {
+	font-size: large;
+}
+
+input {
+	margin-bottom: 10px;
+	padding: 5px;
+}

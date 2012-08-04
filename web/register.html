@@ -1,0 +1,210 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<!-- Data about Data, so meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<title>CraftEconomy - Register</title>
+  
+	<!-- Zhe fonts und styles -->
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Le Favicon and zhe lame apple stuffz -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+
+	<script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<!-- Zhe navigation -->
+	<header class="container header">
+		<div class=row>
+			<!-- Zhe Logo & name -->
+			<div class=span4>
+				<h1>
+					<img src="img/logo.png" alt="logo" id="logo">
+					YourCompany
+				</h1>
+			</div>
+			<!-- Menu & Search -->
+			<nav class=span8>
+				<ul class="nav nav-pills pull-right">
+					<li><a href=index.html>Home</a></li>
+					<li><a href=browse.html>Buy</a></li>
+					<li><a href=sell.html>Sell</a></li>
+					<li class=active>
+						<a href="#">Register</a>
+					</li>
+					<li><a href=account.html>Account</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<article class=container>
+		<div class="span8">
+			<header class="page-header">
+				<h1>Register an account<small>or <a href="login.html">Login.</a></small></h1>
+
+			</header>
+		</div>
+
+		<section class="row imageBox">
+			<div class="span6">
+			<form class="form-horizontal" name="email-signin">
+	        <fieldset>
+	            <div class="control-group">
+	              <label class="control-label" for="email">Email</label>
+	              <div class="controls">
+	                <input type="text" class="input-xlarge required email" id="email">
+	              </div>
+	            </div>
+	            <div class="control-group">
+	              <label class="control-label" for="username">Username</label>
+	              <div class="controls">
+	                <input type="text" class="input-xlarge required" id="username">
+	              </div>
+	            </div>
+	            <div class="control-group">
+	              <label class="control-label" for="password">Password</label>
+	              <div class="controls">
+	                <input type="password" class="input-xlarge required" id="password">
+	              </div>
+	            </div>
+	            <div class="control-group">
+	              <label class="control-label" for="password">Confirm Password</label>
+	              <div class="controls">
+	                <input type="password" class="input-xlarge required" id="confirm_password">
+	              </div>
+	            </div>
+	            <div class="control-group">
+	              <label class="control-label" for="password">Phone Number</label>
+	              <div class="controls">
+	                <input type="text" class="input-xlarge required" id="phone">
+	              </div>
+	            </div>
+	            <hr>
+	            <div class="control-group">
+	              <label class="control-label" for="password">Address</label>
+	              <div class="controls">
+	                <input type="text" class="input-xlarge required" id="addr1"><br>
+	                <input style="margin-top:10px" type="text" class="input-xlarge required" id="addr2">
+	              </div>
+	            </div>
+	            <div class="control-group">
+	              <label class="control-label" for="password">City</label>
+	              <div class="controls">
+	                <input type="text" class="input-xlarge required" id="city">
+	              </div>
+	            </div>
+	            <div class="control-group">
+	              <label class="control-label" for="password">Region</label>
+	              <div class="controls">
+	                <input type="text" class="span2 input-xlarge required" id="region">
+	              </div>
+	            </div>
+	            <div class="control-group">
+	              <label class="control-label" for="password">Postal Code</label>
+	              <div class="controls">
+	                <input type="text" class="span2 input-xlarge required" id="postal_code">
+	              </div>
+	            </div>
+	            <div class="control-group">
+	              <label class="control-label" for="password">Country</label>
+	              <div class="controls">
+	              	<select class="xlarge span2">
+                		<option>United States</option>
+                		<option>Canada</option>
+                		<option>United Kingdom</option>
+              		</select>
+	              </div>
+	            </div>
+	            <hr>
+	            <div class="control-group">
+	              <label class="control-label" for="password"></label>
+	              <div class="controls">
+	              	<label class="checkbox">
+                		<input type="checkbox" id="showbio" name="showbio" value="no">
+                		Are you the maker of the item(s)?
+              		</label>
+	              </div>
+	            </div>
+	            <div id="makers_bio" class="hide control-group">
+	              <label class="control-label" for="password">Maker's Bio</label>
+	              <div class="controls">
+	                <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+	              </div>
+	            </div>
+	            
+	          	</fieldset>
+
+	          	<div class="form-actions">
+            		<button type="submit" class="btn btn-large btn-primary">Register</button>
+            		<button class="btn btn-large">Cancel</button>
+          		</div>
+	        </form>
+	    </div>
+		</section>
+	</article>	
+
+	<footer class=footer>
+		<div class=top>
+			<div class=container>
+				<div class=row>
+					<div class=span5>
+						<h3>Contact information</h3>
+						<p>CraftEconomy<br>
+							500 7th Ave<br>
+							New York, NY 10018<br>
+					</div>
+					<div class=span7>
+						<h3>Sign up for the newsletter!</h3>
+						<p>If you want to stay up to date on updates and discounts, sign up!</p>
+						<form class="form-horizontal">
+							<div class="control-group">
+								<div class="input-append input-prepend">
+									<span class=add-on>@</span><input class=span4 type=text size=16><button class=btn type=button>sign up</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class=bottom>
+			<div class=container>
+				<div class=row>
+					<div class="span12">
+						<p>&copy; CraftEconomy 2012 All Rights Reserved - <a href="#">Terms of Service</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- JS & bottom like zhe pro's -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/libs/lightbox.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+	<!-- Google analytics snippet, remove it when you dont use GA -->
+	<script>
+		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
+</html>
