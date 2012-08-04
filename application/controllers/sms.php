@@ -43,7 +43,8 @@ class Sms extends MY_Controller {
 				Cancel order: CANCEL number reason
 				Send order: SENT number Tracking-number';
 	  }
-	  $text = "$phone_number sent a message: $sms_body - Action: $action, order_id: $order_id, Reason: $reason, Response: $response_message"; 
+	  $text = "$phone_number sent a message: $sms_body - 
+	  	Action: $action, order_id: $order_id, Reason: $reason, Tracking Number: $tracking_number, Response: $response_message"; 
 	  $this->user_logs->write($text);
 
 	  header("content-type: text/xml");
