@@ -1,4 +1,9 @@
+*.sass-cache*
+.DS_Store
+.livereload
+
 */config/development
+*/config/database.php
 */logs/log-*.php
 */logs/!index.html
 */cache/*
