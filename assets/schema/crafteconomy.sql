@@ -162,6 +162,15 @@ CREATE TABLE `orders` (
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+DROP TABLE IF EXISTS `user_logs`;
+
+CREATE TABLE `user_logs` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `log_message` varchar(255) NOT NULL DEFAULT '',
+  `date_submitted` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

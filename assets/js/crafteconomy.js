@@ -1,1 +1,0 @@
-/** CraftEconomy JS **/

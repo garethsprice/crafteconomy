@@ -1,49 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<!-- Data about Data, so meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<title><?php echo $template['title']; ?></title> 
+  
+	<!-- Zhe fonts und styles -->
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+	<link href="<?php print site_url('assets/themes/crafteconomy/css/bootstrap.min.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="<?php print site_url('assets/themes/crafteconomy/css/lightbox.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="<?php print site_url('assets/themes/crafteconomy/css/style.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
+
+	<!-- Le Favicon and zhe lame apple stuffz -->
+	<link rel="shortcut icon" href="<?php print site_url('assets/themes/crafteconomy/img/favicon.ico'); ?>">
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+
+	<script src="<?php print site_url('assets/themes/crafteconomy/js/libs/modernizr-2.5.3.min.js'); ?>"></script>
+	
+	<?php echo $template['metadata']; ?>
+</head>
+
 <!DOCTYPE html> 
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title><?php echo $template['title']; ?></title> 
-	
-	<link rel="shortcut icon" href="#">
-  <link rel="shortcut icon" href="#" type="image/gif">
-  
-  <link rel="image_src" href="#"> <!-- Facebook image -->
-  <meta property="og:title" content="Craft Economy">
-  <meta property="og:description" content="The Marketplace for the Global Village">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="#">
-	
-	<!--<link href="<?php print site_url('assets/themes/crafteconomy/css/screen.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />-->
-  <script src="<?php print site_url('assets/js/jquery-1.7.2.min.js'); ?>"></script>
-  <script src="<?php print site_url('assets/js/jquery.validate.min.js'); ?>"></script>
-	<script src="<?php print site_url('assets/themes/crafteconomy/js/crafteconomy.js'); ?>"></script>
-	
-	<?php echo $template['metadata']; ?>
-	
-	<?php /* <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '#']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script> */ ?>
-</head> 
-
 <body> 
   
-  <header>
-    <h1><a href="/" id="logo" rel="home" name="logo"><!--<img src="#">-->Craft Economy</a></h1>
-  <?php print $main_nav; ?>
-  </header>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  	<!-- Zhe navigation -->
+  	<header class="container header">
+  		<div class=row>
+  			<!-- Zhe Logo & name -->
+  			<div class=span4>
+  				<h1>
+  				  <a href="/">
+    					<img src="<?php print site_url('assets/themes/crafteconomy/img/logo.png'); ?>" alt="logo" id="logo">
+    				</a>
+    				Craft Economy
+  				</h1>
+  			</div>
+  			<!-- Menu & Search -->
+  			<?php print $main_nav; ?>
+  		</div>
+  	</header>
   
+  <article class="container">
   <?php echo $template['body']; ?>
+  </article>
+  
+	<footer class=footer>
+		<div class=top>
+			<div class=container>
+				<div class=row>
+					<div class=span5>
+						<h3>Contact information</h3>
+						<p>CraftEconomy<br>
+							500 7th Ave<br>
+							New York, NY 10018<br>
+					</div>
+					<div class=span7>
+						<h3>Sign up for the newsletter!</h3>
+						<p>If you want to stay up to date on updates and discounts, sign up!</p>
+						<form name="ccoptin" action="http://visitor.r20.constantcontact.com/d.jsp" target="_blank" method="post" class="form-horizontal">
+							<div class="control-group">
+								<div class="input-append input-prepend">
+									<span class=add-on>@</span><input class="span4" type="text" size="16" name="ea"><input class="btn" type="submit" value="sign up">
+								</div>
+							</div>
+							<img src="https://imgssl.constantcontact.com/ui/images1/safe_subscribe_logo.gif" border="0" width="168" height="14" alt=""/>
+							<input type="hidden" name="llr" value="qhmwwlkab">
+              <input type="hidden" name="m" value="1110641946864">
+              <input type="hidden" name="p" value="oi">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class=bottom>
+			<div class=container>
+				<div class=row>
+					<div class="span12">
+						<p>&copy; CraftEconomy 2012 All Rights Reserved - <a href="#">Terms of Service</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- JS & bottom like zhe pro's -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="<?php print site_url('assets/themes/crafteconomy/js/libs/bootstrap.min.js'); ?>"></script>
+	<script src="<?php print site_url('assets/themes/crafteconomy/js/libs/lightbox.js'); ?>"></script>
+	<script src="<?php print site_url('assets/themes/crafteconomy/js/plugins.js'); ?>"></script>
+	<script src="<?php print site_url('assets/themes/crafteconomy/js/script.js'); ?>"></script>
 </body>
 </html>

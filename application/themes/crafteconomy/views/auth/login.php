@@ -1,53 +1,43 @@
-<div id="login-container">	
-	
-	<div id="login-header">
-		
-		<h3><?php print $template['title']; ?></h3>
-		
-	</div> <!-- /login-header -->
-	
-	<div id="login-content" class="clearfix">
-	
-	<?php if(!empty($message)): ?>
-	<div class="alert alert-block alert-error"><?php echo $message;?></div>
-	<?php endif; ?>
-	
-	<?php echo form_open("login");?>
-				<fieldset>
-					<div class="control-group">
-						<label class="control-label" for="identity">E-mail Address</label>
-						<div class="controls">
-							<?php echo form_input($identity);?>
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="password">Password</label>
-						<div class="controls">
-							<?php echo form_input($password);?>
-						</div>
-					</div>
-				</fieldset>
-				
-				<div id="remember-me" class="pull-left">
-					<?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?>
-					<label id="remember-label" for="remember">Remember Me</label>
-				</div>
-				
-				<div class="pull-right">
-					<button type="submit" class="btn btn-warning btn-large">
-						Login
-					</button>
-				</div>
-			<?php echo form_close();?>
-			
-		</div> <!-- /login-content -->
-		
-		
-		<div id="login-extra">
-			
-			<p><a href="<?php print site_url('auth/forgot_password'); ?>">Forgot your password?</a></p>
-			
-		</div> <!-- /login-extra -->
-	
-</div> <!-- /login-wrapper -->
+<div class="row">
+  <div class="span12">
+  	<header class="page-header">
+  		<h1>Login<small>or <a href="<?php print site_url('register'); ?>">Register.</a></small></h1>
+  	</header>
+	</div>
+</div>
 
+<section class="row">
+  <div class="span12">
+  <?php if(!empty($message)): ?>
+  <div class="alert alert-block alert-error"><?php echo $message;?></div>
+  <?php endif; ?>
+	  
+	<?php echo form_open("login", array('class' => 'form-horizontal', 'name' => 'email-signin')); ?>
+    <fieldset>
+        <div class="control-group">
+          <label class="control-label" for="email">Email or username</label>
+          <div class="controls">
+            <?php echo form_input($identity);?>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="password">Password</label>
+          <div class="controls">
+            <?php echo form_input($password);?>
+          </div>
+        </div>
+
+      	<div class="form-actions">
+      		<button type="submit" class="btn btn-large btn-primary">Login</button>
+      		<button class="btn btn-large">Cancel</button>
+
+    		</div>
+    		<div class="control-group">
+        	<div class="controls">
+        		<a href="<?php print site_url('auth/forgot_password'); ?>">Forgot your password?</a>
+        	</div>
+      </div>
+      </fieldset>
+    <?php echo form_close();?>
+  </div>
+</section>
