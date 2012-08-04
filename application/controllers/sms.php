@@ -26,7 +26,7 @@ class Sms extends MY_Controller {
 
 	  header("content-type: text/xml");
 	  echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-	  echo "<Response>
+	  print "<Response>
 			<Sms>thanks for the message! $phone_number</Sms>
 			</Response>";
 
