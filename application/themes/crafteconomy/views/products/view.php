@@ -1,0 +1,1 @@
+Individual product page for product #<?php print $id; ?>
