@@ -32,13 +32,13 @@ class Sms extends MY_Controller {
 	  	$order_id = $exp[1];
 	  	$reason = $exp[2];
 	  	$response_message = "We're sorry you had to cancel.";
-	  } elseif (preg_match('/SENT/i', $sms_body)) {
+	  } elseif (preg_match('/SHIPPED/i', $sms_body)) {
 	  	$exp = explode(' ', $sms_body, 3);
-	  	$action = 'SENT';
+	  	$action = 'SHIPPED';
 	  	$order_id = $exp[1];
 	  	$tracking_number = $exp[2];
 	  	$response_message = 'Thank you for sending! Funds will be distributed when the buyer receives the item.';
-	  } elseif (preg_match('/HELP/i', $sms_body)) {
+	  } elseif (preg_match('/CRAFTHELP/i', $sms_body)) {
 	  	$response_message = 'Accept order: OK order number
 				Cancel order: CANCEL number reason
 				Send order: SENT number Tracking-number';
