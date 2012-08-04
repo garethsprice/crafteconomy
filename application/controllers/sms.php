@@ -23,27 +23,27 @@ class Sms extends MY_Controller {
 	  $sms_body = $_REQUEST['Body'];
 	  if (preg_match('/OK/i', $sms_body)) {
 	  	$exp = explode(' ', $sms_body);
-	  	$action = 'ok';
+	  	$action = 'OK';
 	  	$order_id = $exp[1];
 	  	$response_message = 'Thank you for accepting, you can ship the item at your earliest convenience.';
 	  } elseif (preg_match('/CANCEL/i', $sms_body)) {
 	  	$exp = explode(' ', $sms_body, 3);
-	  	$action = 'cancel';
+	  	$action = 'CANCEL';
 	  	$order_id = $exp[1];
 	  	$reason = $exp[2];
 	  	$response_message = "We're sorry you had to cancel.";
 	  } elseif (preg_match('/SENT/i', $sms_body)) {
 	  	$exp = explode(' ', $sms_body, 3);
-	  	$action = 'sent';
+	  	$action = 'SENT';
 	  	$order_id = $exp[1];
 	  	$tracking_number = $exp[2];
-	  	$response_message = 'Thank you for sending Funds will be distributed when the buyer receives the item';
+	  	$response_message = 'Thank you for sending! Funds will be distributed when the buyer receives the item';
 	  } elseif (preg_match('/HELP/i', $sms_body)) {
 	  	$response_message = 'Accept order: OK order number
 				Cancel order: CANCEL number reason
 				Send order: SENT number Tracking-number';
 	  }
-	  $text = "$phone_number sent a message: $sms_body - Action: $action, order_id: $order_id, Reason: $reason, Tracking Number: $tracking_number, Response: $response_message"; 
+	  $text = "$phone_number sent a message: $sms_body - Action: $action, order_id: $order_id, Reason: $reason, Tracking Number: $tracking_number, Response: $response_message "; 
 	  $this->user_logs->write($text);
 
 	  header("content-type: text/xml");
