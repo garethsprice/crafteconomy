@@ -22,9 +22,27 @@
 	<link rel="shortcut icon" href="<?php print site_url('assets/themes/crafteconomy/img/favicon.ico'); ?>">
 	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
 
+	<script src="<?php print site_url('assets/js/jquery-1.7.2.min.js'); ?>"></script>
+	<script src="<?php print site_url('assets/js/jquery.validate.min.js'); ?>"></script>
 	<script src="<?php print site_url('assets/themes/crafteconomy/js/libs/modernizr-2.5.3.min.js'); ?>"></script>
+	<script src="<?php print site_url('assets/themes/crafteconomy/js/libs/modernizr-2.5.3.min.js'); ?>"></script>
+	<script src="<?php print site_url('assets/themes/crafteconomy/js/crafteconomy.js'); ?>"></script>
 	
 	<?php echo $template['metadata']; ?>
+	
+	<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33886838-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
 </head>
 
 <!DOCTYPE html> 
@@ -62,7 +80,7 @@
   				<div class=row>
   					<div class=span5>
   						<h3>Contact information</h3>
-  						<p>CraftEconomy<br>
+  						<p>Craft Economy<br>
   							500 7th Ave<br>
   							New York, NY 10018<br>
   					</div>
@@ -88,7 +106,7 @@
   		    	  <div class="container">
   				<div class=row>
   					<div class="span12">
-  						<p>&copy; CraftEconomy 2012 All Rights Reserved - <a href="#">Terms of Service</a></p>
+  						<p>&copy; CraftEconomy 2012 All Rights Reserved - <a href="<?php print site_url('terms'); ?>">Terms of Service</a></p>
   					</div>
   				</div>
   		</div>

@@ -37,10 +37,26 @@
   				</div> <!-- /controls -->				
   			</div> <!-- /control-group -->
 
+        <hr>
+        <div class="control-group">
+          <label class="control-label" for="password"></label>
+          <div class="controls">
+          	<label class="checkbox">
+          		<input type="checkbox" id="showbio" name="showbio" value="no">
+          		I want to sell items on Craft Economy
+        		</label>
+          </div>
+        </div>
+
+        <fieldset id="makers_bio" class="hide">
+
+        <p class="help-block">Thanks for your interest in selling on Craft Economy! We just need a few additional details from you.</p>
+
   			<div class="control-group">											
   				<label class="control-label">Phone number</label>
   				<div class="controls">
   					<?php echo form_input($phone);?>
+  					<p class="help-block">You need to be able to receive SMS text messages to this number.</p>
   				</div> <!-- /controls -->				
   			</div> <!-- /control-group -->
   			
@@ -63,56 +79,42 @@
   			<div class="control-group">											
   				<label class="control-label">Address</label>
   				<div class="controls">
-  					<?php echo form_input($phone);?>
-  					<br/><br/>
-  					<?php echo form_input($phone);?>
+  					<?php echo form_input($billing_address);?>
   				</div> <!-- /controls -->				
   			</div> <!-- /control-group -->
 
   			<div class="control-group">											
   				<label class="control-label">City</label>
   				<div class="controls">
-  					<?php echo form_input($phone);?>
+  					<?php echo form_input($billing_city);?>
   				</div> <!-- /controls -->				
   			</div> <!-- /control-group -->
 
   			<div class="control-group">											
   				<label class="control-label">Region</label>
   				<div class="controls">
-  					<?php echo form_input($phone);?>
+  					<?php echo form_input($billing_state);?>
   				</div> <!-- /controls -->				
   			</div> <!-- /control-group -->
 				
   			<div class="control-group">											
   				<label class="control-label">Postal code</label>
   				<div class="controls">
-  					<?php echo form_input($phone);?>
+  					<?php echo form_input($billing_postal_code);?>
   				</div> <!-- /controls -->				
   			</div> <!-- /control-group -->
 
   			<div class="control-group">											
   				<label class="control-label">Country</label>
   				<div class="controls">
-  					<?php echo form_input($phone);?>
+  				  <?php echo form_dropdown('billing_country', $country_options);?>
   				</div> <!-- /controls -->				
   			</div> <!-- /control-group -->
-
-        <hr>
-        <div class="control-group">
-          <label class="control-label" for="password"></label>
-          <div class="controls">
-          	<label class="checkbox">
-          		<input type="checkbox" id="showbio" name="showbio" value="no">
-          		Are you the maker of the item(s)?
-        		</label>
-          </div>
-        </div>
         
-        <fieldset id="makers_bio" class="hide">
           <div class="control-group">
             <label class="control-label" for="password">Maker's Bio</label>
             <div class="controls">
-              <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+              <?php print form_textarea($bio); ?>
               <p class="help-block">Describe yourself and your business, a more personal description helps buyers to connect with you.</p>
             </div>
           </div>
@@ -120,7 +122,7 @@
     			<div class="control-group">											
     				<label class="control-label">Photo</label>
     				<div class="controls">
-    					<?php echo form_input($phone);?>
+    					<?php echo form_input($photo);?>
     				</div> <!-- /controls -->				
     			</div> <!-- /control-group -->
 			  </fieldset>

@@ -8,6 +8,7 @@
 
 <section class="row">
   <div class="span12">
+    
   <?php if(!empty($message)): ?>
   <div class="alert alert-block alert-error"><?php echo $message;?></div>
   <?php endif; ?>
