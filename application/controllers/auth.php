@@ -190,7 +190,6 @@ class Auth extends MY_Controller {
 	//forgot password
 	function forgot_password()
 	{
-	  $this->template->append_metadata('<link rel="stylesheet" href="/assets/css/adminia-login.css" type="text/css" />');
 		$this->template->title("Forgot Password");
 		
 		$this->form_validation->set_rules('email', 'Email Address', 'required');
@@ -669,7 +668,7 @@ class Auth extends MY_Controller {
 				'type' => 'filepicker-dragdrop',
 				'data-fp-apikey' => $this->config->item('filepicker_api_key'),
 				'data-fp-option-services' => $this->config->item('filepicker_option_services'),
-				'value' => $this->form_validation->set_value('phone'),
+				'value' => $this->form_validation->set_value('photo'),
 			);
 			$this->data['password'] = array('name' => 'password',
 				'id' => 'password',

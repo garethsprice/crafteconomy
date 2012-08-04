@@ -20,7 +20,7 @@
 
 	<!-- Le Favicon and zhe lame apple stuffz -->
 	<link rel="shortcut icon" href="<?php print site_url('assets/themes/crafteconomy/img/favicon.ico'); ?>">
-	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="<?php print site_url('assets/themes/crafteconomy/img/apple-touch-icon-precomposed.png'); ?>">
 
 	<script src="<?php print site_url('assets/js/jquery-1.7.2.min.js'); ?>"></script>
 	<script src="<?php print site_url('assets/js/jquery.validate.min.js'); ?>"></script>

@@ -1,6 +1,6 @@
 /* General Stuffs */
 body {
-	background: url("/assets/themes/crafteconomy/img/gplay.png") repeat-x;
+	background: url("../img/gplay.png") repeat-x;
 }
 
 h1, h2, h3, h4, h5 {
@@ -211,5 +211,18 @@ th {
 
 td {
 	font-size: large;
+}
+
+article form {
+	box-shadow: 1px 1px 4px #eee;	
+	background-image: url('../img/subtle_dots.png');
+	background-repeat:repeat;
+	padding-top: 30px;
+	margin-right: 30px;
+	border-radius: 15px;
+}
+
+.form-actions {
+	background-color: transparent;
 }
 
