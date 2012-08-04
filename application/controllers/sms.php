@@ -22,18 +22,18 @@ class Sms extends MY_Controller {
 	  $phone_number = $_REQUEST['From'];
 	  $sms_body = $_REQUEST['Body'];
 	  if (preg_match('/OK/i', $sms_body)) {
-	  	$exp = $explode(' ', $sms_body);
+	  	$exp = explode(' ', $sms_body);
 	  	$action = 'ok';
 	  	$order_id = $exp[1];
 	  	$response_message = 'Thank you for accepting, you can ship the item at your earliest convenience.';
 	  } elseif (preg_match('/CANCEL/i', $sms_body)) {
-	  	$exp = $explode(' ', $sms_body, 3);
+	  	$exp = explode(' ', $sms_body, 3);
 	  	$action = 'cancel';
 	  	$order_id = $exp[1];
 	  	$reason = $exp[2];
 	  	$response_message = "We're sorry you had to cancel.";
 	  } elseif (preg_match('/SENT/i', $sms_body)) {
-	  	$exp = $explode(' ', $sms_body, 3);
+	  	$exp = explode(' ', $sms_body, 3);
 	  	$action = 'sent';
 	  	$order_id = $exp[1];
 	  	$tracking_number = $exp[2];
