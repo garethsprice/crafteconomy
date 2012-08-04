@@ -83,10 +83,10 @@ $config['max_rounds']     = 9;
  */
 $config['site_title']           = "Craft Economy"; 		// Site Title, example.com
 $config['admin_email']          = "noreply@crafteconomy.com"; 	// Admin Email, admin@example.com
-$config['default_group']        = 'admin'; 			// Default group, use name
+$config['default_group']        = 'members'; 			// Default group, use name
 $config['admin_group']          = 'admin'; 				// Default administrators group, use name
 $config['identity']             = 'email'; 				// A database column which is used to login with
-$config['min_password_length']  = 8; 					// Minimum Required Length of Password
+$config['min_password_length']  = 5; 					// Minimum Required Length of Password
 $config['max_password_length']  = 20; 					// Maximum Allowed Length of Password
 $config['email_activation']     = FALSE; 				// Email Activation for registration
 $config['manual_activation']    = FALSE; 				// Manual Activation for registration
