@@ -33,20 +33,20 @@ class MY_Controller extends CI_Controller {
     $this->load->spark('menu/1.0.0');
 
     $nav = array();
-    $nav['browse'] = '<i class="icon-th-list"></i> Buy';
-    $nav['sell'] = '<i class="icon-th-list"></i> Sell';
+    $nav['browse'] = 'Buy';
+    $nav['sell'] = 'Sell';
     if(empty($user)) {
-      $nav['register'] = '<i class="icon-th-list"></i> Register';
-      $nav['login'] = '<i class="icon-th-list"></i> Login';
+      $nav['register'] = 'Register';
+      $nav['login'] = 'Login';
     } else {
-      $nav['account/settings'] = '<i class="icon-user"></i> Account';
-      $nav['logout'] = '<i class="icon-user"></i> Log out';
+      $nav['account/settings'] = 'Account';
+      $nav['logout'] = 'Log out';
     }
     
     $active = ltrim($_SERVER['REQUEST_URI'], '/');
     
     $this->menu->container_tag_id = 'main-nav';
-    $this->menu->container_tag_class = 'nav nav-tabs nav-stacked';
+    $this->menu->container_tag_class = 'nav nav-pills pull-right span-8';
     $menu = $this->menu->render($nav, $active, NULL, 'basic');
     $this->template->set('main_nav', $menu);
   }
