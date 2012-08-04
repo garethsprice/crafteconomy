@@ -1,19 +1,20 @@
-<?php if(!empty($message)): ?>
-<div class="alert alert-block alert-error"><?php echo $message;?></div>
-<?php endif; ?>
+<div class="row">
+  <div class="span12">
+  	<header class="page-header">
+  		<h1>Register<small>or <a href="<?php print site_url('login'); ?>">Login.</a></small></h1>
+  	</header>
+	</div>
+</div>
 
-<div class="widget">
-							
-  <div class="widget-header">
-  	<h3>Create User</h3>
-  </div> <!-- /widget-header -->
-		
-  <div class="widget-content">
+<section class="row">
+	<div class="span12">
 
-  	<?php echo form_open("auth/create_user", array('class' => 'form-horizontal'));?>
-  	
-  		<fieldset>
-
+  <?php if(!empty($message)): ?>
+  <div class="alert alert-block alert-error"><?php echo $message;?></div>
+  <?php endif; ?>
+	  
+	<?php echo form_open("auth/create_user", array('class' => 'form-horizontal', 'name' => 'email-signin')); ?>
+      <fieldset>
   			<div class="control-group">											
   				<label class="control-label">First Name</label>
   				<div class="controls">
@@ -62,9 +63,8 @@
   				<button type="submit" class="btn btn-primary">Create User</button> 
   				<a class="btn" href="javascript:history.back()">Cancel</a>
   			</div> <!-- /form-actions -->
-  		</fieldset>
-  	<?php echo form_close(); ?>
-  	
-  </div> <!-- /widget-content -->
-  
-</div>
+
+      </fieldset>
+      <?php echo form_close();?>
+  </div>
+</section>
