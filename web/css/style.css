@@ -176,3 +176,23 @@ input {
 	margin-bottom: 10px;
 	padding: 5px;
 }
+
+.caption {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.price {
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.thumbnail {
+	margin-bottom: 15px;
+	padding-top: 10px;
+}
+
+.thumbnail:hover {
+	box-shadow: 2px 2px 10px #333;
+	filter: dropshadow(color=#333, offx=5, offy=0);
+}
