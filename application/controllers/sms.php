@@ -25,7 +25,7 @@ class Sms extends MY_Controller {
 	  	$exp = $explode(' ', $sms_body);
 	  	$action = 'ok';
 	  	$order_id = $exp[1];
-	  	$response_message = 'Thank you for accepting, you can ship the item at your earliest convenience.'
+	  	$response_message = 'Thank you for accepting, you can ship the item at your earliest convenience.';
 	  } elseif (preg_match('/CANCEL/i', $sms_body)) {
 	  	$exp = $explode(' ', $sms_body, 3);
 	  	$action = 'cancel';
@@ -37,7 +37,7 @@ class Sms extends MY_Controller {
 	  	$action = 'sent';
 	  	$order_id = $exp[1];
 	  	$tracking_number = $exp[2];
-	  	$response_message = 'Thank you for sending! Funds will be distributed when the buyer receives the item.'
+	  	$response_message = 'Thank you for sending! Funds will be distributed when the buyer receives the item.';
 	  } elseif (preg_match('/HELP/i', $sms_body)) {
 	  	$response_message = 'Accept order: OK order number
 				Cancel order: CANCEL number reason
