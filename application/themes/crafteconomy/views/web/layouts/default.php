@@ -55,12 +55,11 @@
   	<header class="header">
   		<div class="row">
   			<!-- Zhe Logo & name -->
-  			<div class="span4">
+  			<div class="span6">
   				<h1>
   				  <a href="<?php print site_url('/'); ?>">
     					<img src="<?php print site_url('assets/themes/crafteconomy/img/logo.png'); ?>" alt="logo" id="logo">
     				</a>
-    				Craft Economy
   				</h1>
   			</div>
   			<!-- Menu & Search -->

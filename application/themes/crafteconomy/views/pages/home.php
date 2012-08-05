@@ -69,7 +69,7 @@
 		</header>
 	</div>
 	<div style="margin-left:20px;" class="row">
-		<div style="margin-top:25px;" class="span1">
+		<div style="margin-top:20px;" class="span1">
 			<span class="badge">1</span>
 		</div>
 		<div class="span3">
@@ -85,7 +85,7 @@
 		</div>
 	</div>
 	<div style="margin-left:20px;" class="row">
-		<div style="margin-top:25px;" class="span1">
+		<div style="margin-top:20px;" class="span1">
 			<span class="badge">2</span>
 		</div>
 		<div class="span3">
@@ -104,7 +104,7 @@
 		</div>
 	</div>
 	<div style="margin-left:20px;" class="row">
-		<div style="margin-top:25px;" class="span1">
+		<div style="margin-top:20px;" class="span1">
 			<span class="badge">3</span>
 		</div>
 		<div class="span3">
@@ -122,7 +122,7 @@
 		</div>
 	</div>
 	<div style="margin-left:20px;" class="row">
-		<div style="margin-top:25px;" class="span1">
+		<div style="margin-top:20px;" class="span1">
 			<span class="badge">4</span>
 		</div>
 		<div class="span3">

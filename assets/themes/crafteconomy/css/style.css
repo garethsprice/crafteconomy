@@ -5,8 +5,12 @@ body {
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Ubuntu', sans-serif;
+	line-height: 100%;
 }
 
+h1 {
+	font-size: xx-large;
+}
 a {
 	color: #007100;
 }
@@ -45,10 +49,12 @@ header.header div.control-group {
 }
 
 img#logo {
-	height: 60px;
-	width: 60px;
+	height: 100px;
+	margin-top: -20px;
+	margin-bottom: -10px;
+	margin-left: -47px;
 	float: left;
-	margin: -7px 10px 0 0;
+
 }
 
 /* Le nav */
@@ -97,7 +103,7 @@ div.carousel-caption p {
 }
 
 div.carousel-caption h1 {
-	font-size: 50px;
+	font-size: 40px;
 }
 
 div.carousel-caption p {
@@ -254,7 +260,6 @@ article form {
 .badge {
 	padding: 11px 19px 12px;
 	border-radius: 25px;
-	margin-top: 10px;
 	font-size: x-large;
 	font-weight: bold;
 	background-color: #007100;
