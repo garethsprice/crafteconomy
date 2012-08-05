@@ -47,9 +47,11 @@ class Sms extends MY_Controller {
 	  	$tracking_number = $exp[2];
 	  	$response_message = 'Thank you for sending! Funds will be distributed when the buyer receives the item.';
 	  } elseif (preg_match('/CRAFTHELP/i', $sms_body)) {
-	  	$response_message = 'Accept order: OK order number
-				Cancel order: CANCEL number reason
-				Send order: SENT number Tracking-number';
+	  	$response_message = 'Accept order: OK order number, Cancel order: CANCEL number reason, Send order: SHIPPED number Tracking-number';
+	  } elseif (preg_match('/CRAFT HELP/i', $sms_body)) {
+	  	$response_message = 'Accept order: OK order number, Cancel order: CANCEL number reason, Send order: SHIPPED number Tracking-number';
+	  } else {
+	  	$response_message = 'Your request was not understood, for a list of commands reply CRAFTHELP to this message';
 	  }
 	  $text = "$phone_number sent a message: $sms_body - Action: $action, order_id: $order_id, Reason: $reason, Tracking Number: $tracking_number, Response: $response_message "; 
 	  $this->user_logs->write($text);

@@ -139,6 +139,7 @@ DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `seller_id` mediumint(8) unsigned NOT NULL,
+  `intermediary` mediumint(8) unsigned NOT NULL,
   `title` varchar(255) NOT NULL DEFAULT '',
   `description` mediumtext DEFAULT NULL,
   `price` decimal(12,2) NOT NULL DEFAULT '0.00',
