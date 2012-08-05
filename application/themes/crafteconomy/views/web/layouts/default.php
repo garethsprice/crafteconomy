@@ -14,7 +14,8 @@
   
 	<!-- Zhe fonts und styles -->
 	<link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
-	<link href="//current.bootstrapcdn.com/bootstrap-v204/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css" />
+	<link href="<?php print site_url('assets/themes/crafteconomy/css/bootstrap.min.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="<?php print site_url('assets/themes/crafteconomy/css/bootstrap-responsive.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="<?php print site_url('assets/themes/crafteconomy/css/lightbox.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="<?php print site_url('assets/themes/crafteconomy/css/style.css'); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
 
