@@ -7,11 +7,25 @@ class Account_model extends CI_Model {
   /**
    * Save an entry to the database
    */
-  public function payment_start_order($product, $buyer) {    
+  public function payment_start_order($product, $buyer) {   
+    $buyer = $this->db->get_where('users', array('id' => $buyer))->row_array();
+
+    if($result) {
+  		$message = '<h1>Craft Economy</h1>
+    	<p>Your order was received and is processing.</p>
+    	<p>Thanks for using Craft Economy!</p>';
+  		$this->email->clear();
+  		$this->email->from($this->config->item('admin_email', 'ion_auth'), $this->config->item('site_title', 'ion_auth'));
+  		$this->email->to($buyer['email']);
+  		$this->email->subject('Receipt for your Craft Economy order (#' . $order['id'] . ')');
+  		$this->email->message($message);
+      $this->email->send();
+    }
+     
   	$DateOfRequest = date("Y-m-d H:i:s");
     $data['product_id'] = $product;
   	$data['date_purchased'] = $DateOfRequest;
-    $data['buyer_id'] = $buyer;
+    $data['buyer_id'] = $buyer['id'];
     $data['order_status'] = 'Pending';
 		return $this->db->insert('orders', $data);
 	}
