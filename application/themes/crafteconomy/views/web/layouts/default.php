@@ -102,13 +102,15 @@
   				</div>
   		</div>
   		<div class=bottom>
-  		    	  <div class="container">
-  				<div class=row>
-  					<div class="span12">
-  						<p>&copy; CraftEconomy 2012 All Rights Reserved - <a href="<?php print site_url('terms'); ?>">Terms of Service</a></p>
-  					</div>
-  				</div>
-  		</div>
+	    	  <div class="container">
+				<div class="row">
+				  <div class="span5" style="text-align: left;">
+				    <p><strong>Powered by:</strong> Twilio, SendGrid, Temboo,<br/>Stripe, Constant Contact, Paypal, Etsy</p>
+				  </div>
+					<div class="span7">
+						<p>&copy; CraftEconomy <?php print date('Y'); ?> All Rights Reserved - <a href="<?php print site_url('terms'); ?>">Terms of Service</a></p>
+					</div>
+				</div>
   		</div>
   	</footer>
 
