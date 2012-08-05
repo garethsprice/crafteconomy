@@ -5,22 +5,22 @@ $(document).ready(function() {
 
 	$('#showbio').click(function () {
    		if ($('#showbio').is(':checked')) {
-    		$("#makers_bio").show();
+    		$("#makers_bio").slideDown('fast');
 		} else {
-    		$("#makers_bio").hide();
+    		$("#makers_bio").slideUp('fast');
 		} 
 	});
 
 	$('#confirm_listing_sms').click(function () {
    		if ($('#confirm_listing_sms').is(':checked')) {
-    		$("#confirmphone").show();
+    		$("#confirmphone").slideDown('fast');
 		} else {
-    		$("#confirmphone").hide();
+    		$("#confirmphone").slideUp('fast');
 		} 
 	});
 
 	$('.btn_more_info').click(function() {
-		var more_info = $(this).parents('.caption').children('.more-info').toggle();
+		var more_info = $(this).parents('.caption').children('.more-info').slideToggle('fast');
 		if ($(this).html() === "More info") {
 			$(this).html('Less info');
 			$(this).removeClass('btn-primary');

@@ -5,17 +5,17 @@ $(document).ready(function() {
 
 	$('#showbio').click(function () {
    		if ($('#showbio').is(':checked')) {
-    		$("#makers_bio").show();
+    		$("#makers_bio").slideDown();
 		} else {
-    		$("#makers_bio").hide();
+    		$("#makers_bio").slideUp();
 		} 
 	});
 
 	$('#confirm_listing_sms').click(function () {
    		if ($('#confirm_listing_sms').is(':checked')) {
-    		$("#confirmphone").show();
+    		$("#confirmphone").slideDown();
 		} else {
-    		$("#confirmphone").hide();
+    		$("#confirmphone").slideUp();
 		} 
 	});
 });
