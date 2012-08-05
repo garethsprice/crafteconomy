@@ -1,7 +1,7 @@
 <div class="row">
   <div class="span12">
   	<header class="page-header">
-  		<h1>Change Password</h1>
+  		<h1>Account</h1>
   	</header>
 	</div>
 </div>
@@ -35,7 +35,9 @@
   					<?php echo form_input($new_password_confirm);?>
   				</div> <!-- /controls -->				
   			</div> <!-- /control-group -->
-				
+				 <div class="offset9">
+          <a href="orders">Orders</a>
+        </div>
   			<div class="form-actions">
   				<button type="submit" class="btn btn-large btn-primary">Change</button> 
   				<a class="btn btn-large" href="javascript:history.back()">Cancel</a>
