@@ -51,12 +51,12 @@
 	<div class="span4">
 		<i class=eye></i>
 		<h3>Socially Responsible Purchases</h3>
-		<p>Buy handmade goods from around the world. Connect directly with craftsmen and <strong>help improve livelihoods</strong>. </p>
+		<p>Buy handmade goods from around the world. Connect directly with crafters and <strong>help improve livelihoods</strong>. </p>
 	</div>
 	<div class="span4">
 		<i class=gear></i>
 		<h3>Three Party Trust</h3>
-		<p>If you've never been online, the Internet can be a scary place. Craftsmen receive <strong>SMS notifications</strong> at every step of the sales process. </p>
+		<p>Crafters can list items through intermediaries then manage their own orders via <strong>two-way SMS</strong> at every step of the sales process.</p>
 	</div>
 	
 </section>
