@@ -10,7 +10,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 
-	<title><?php echo $template['title']; ?></title> 
+	<title><?php echo implode(' | ', array($template['title'], $this->config->item('site_title', 'ion_auth'))); ?></title> 
   
 	<!-- Zhe fonts und styles -->
 	<link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
