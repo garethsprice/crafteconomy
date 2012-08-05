@@ -78,7 +78,7 @@
   				<div class=row>
   					<div class=span5>
   						<h3>Contact information</h3>
-  						<p>Craft Economy<br>
+  						<p>CraftEconomy<br>
   							500 7th Ave<br>
   							New York, NY 10018<br>
   					</div>

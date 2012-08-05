@@ -43,14 +43,14 @@
           <div class="controls">
           	<label class="checkbox">
           		<input type="checkbox" id="showbio" name="showbio" value="no">
-          		I want to sell items on Craft Economy
+          		I want to sell items on CraftEconomy
         		</label>
           </div>
         </div>
 
         <fieldset id="makers_bio" class="hide">
 
-        <p class="help-block">Thanks for your interest in selling on Craft Economy! We just need a few additional details from you.</p>
+        <p class="help-block">Thanks for your interest in selling on CraftEconomy! We just need a few additional details from you.</p>
 
   			<div class="control-group">											
   				<label class="control-label">Phone number</label>
