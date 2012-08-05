@@ -46,6 +46,7 @@ $route['register'] = 'auth/create_user';
 $route['account/settings'] = 'auth/change_password';
 $route['browse'] = 'products/browse';
 $route['product/(:any)'] = 'products/view/$1';
+$route['checkout/(:any)'] = 'checkout/index/$1';
 $route['terms'] = 'pages/view/terms';
 //$route['(\w+)'] = 'pages/view/$1';
 $route['404_override'] = '';

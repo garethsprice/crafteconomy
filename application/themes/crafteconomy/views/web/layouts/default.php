@@ -25,8 +25,6 @@
 
 	<script src="<?php print site_url('assets/js/jquery-1.7.2.min.js'); ?>"></script>
 	<script src="<?php print site_url('assets/js/jquery.validate.min.js'); ?>"></script>
-	<script src="<?php print site_url('assets/themes/crafteconomy/js/libs/modernizr-2.5.3.min.js'); ?>"></script>
-	<script src="<?php print site_url('assets/themes/crafteconomy/js/libs/modernizr-2.5.3.min.js'); ?>"></script>
 	<script src="<?php print site_url('assets/themes/crafteconomy/js/crafteconomy.js'); ?>"></script>
 	
 	<?php echo $template['metadata']; ?>

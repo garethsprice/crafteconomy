@@ -368,5 +368,12 @@ $config['encryption_key'] = "CR4FT3CONOMY";
 $config['filepicker_api_key'] = 'AIYY7zJrPSbS5GPjIzVuBz';
 $config['filepicker_option_services'] = 'COMPUTER,WEBCAM,URL,IMAGE_SEARCH,GMAIL,GOOGLE_DRIVE,DROPBOX';
 
+$config['temboo_account_name'] = 'crafteconomy';
+$config['temboo_api_key_name'] = 'crafteconomy';
+$config['temboo_api_key_value'] = 'e1cb547d-69ef-494a-b';
+
+// Test key
+$config['stripe_secret_key'] = 'sk_07YH5s5ueyqghi2mYsHkBai3wAj4r';
+
 /* End of file config.php */
 /* Location: ./application/config/config.php */

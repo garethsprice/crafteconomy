@@ -10,6 +10,7 @@ class Products extends MY_Controller {
 	{	  
 	  $data = array();
 	  $data['products'] = $this->products_model->get_entries();
+	  
     $this->template->title('Browse Products');
   	$this->template->build('products/browse', $data);
 	}
