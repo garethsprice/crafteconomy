@@ -11,22 +11,24 @@
 	<form class="form-horizontal" name="email-signin">
       <fieldset>
           <div class="control-group">
-            <label class="control-label" for="email">Title</label>
+            <label class="control-label">Title</label>
             <div class="controls">
-              <input type="text" class="input-xlarge required email" id="email">
+              <?php print form_input($title); ?>
             </div>
           </div>
           <div class="control-group">
-            <label class="control-label" for="">Description</label>
+            <label class="control-label">Description</label>
             <div class="controls">
-              <textarea class="input-xlarge" id="description" rows="3"></textarea>
+              <?php print form_textarea($description); ?>
             </div>
           </div>
 
           <div class="control-group">
             <label class="control-label" for="email">Price</label>
             <div class="controls">
-              <input type="text" class="span2 input-xlarge required email" id="email">
+              <div class="input-prepend">
+                <span class="add-on">$</span><?php print form_input($price); ?>
+              </div>
             </div>
           </div>
 

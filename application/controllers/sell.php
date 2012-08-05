@@ -17,12 +17,15 @@ class Sell extends MY_Controller {
 			//setup the input
 			$this->data['title'] = array('name' => 'title',
 				'id' => 'title',
+				'class' => 'input-xlarge required',
 			);
 			$this->data['description'] = array('name' => 'description',
 				'id' => 'description',
+				'type' => 'textarea',
 			);
 			$this->data['price'] = array('name' => 'price',
 				'id' => 'price',
+				'class' => 'span2 input-xlarge required',
 			);
 			$this->template->append_metadata('<script src="//api.filepicker.io/v0/filepicker.js"></script>');
 			$this->data['photo'] = array('name' => 'photo',
