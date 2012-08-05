@@ -21,6 +21,14 @@ class Sms extends MY_Controller {
 	  $this->load->model('user_logs');
 	  $phone_number = $_REQUEST['From'];
 	  $sms_body = $_REQUEST['Body'];
+
+	  // Instantiating variables to avoid Undefined variable errors when logging
+	  $action = NULL;
+	  $order_id = NULL;
+	  $reason = NULL;
+	  $tracking_number = NULL;
+	  $response_message = NULL;
+
 	  if (preg_match('/OK/i', $sms_body)) {
 	  	$exp = explode(' ', $sms_body);
 	  	$action = 'OK';
