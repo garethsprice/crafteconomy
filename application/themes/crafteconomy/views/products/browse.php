@@ -7,12 +7,11 @@
 	</header>
 </div>
 </div>
-
 <div class="row">
 <div class="span12">
-	<ul class="thumbnails">
+	<ul class="thumbnails" id="products">
 	      <?php foreach($products as $product): ?>
-    			<li class="span4">
+    			<li class="span4 product">
       				<div class="thumbnail">
         				<img src="<?php print $product['photo']; ?>" alt="">
         				<div class="caption">
@@ -33,3 +32,14 @@
     	</ul>
 </div>
 </div>
+
+<script src="<?php print site_url('assets/js/jquery.isotope.min.js'); ?>"></script>
+<script type="text/javascript">$(document).ready(function(){
+  var $container = $('#products');
+  
+  $container.imagesLoaded( function(){
+    $container.isotope({
+      // options...
+    });
+  });
+});</script>
