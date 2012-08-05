@@ -11,9 +11,10 @@
     <?php if(!empty($message)): ?>
     <div class="alert alert-block alert-error"><?php echo $message;?></div>
     <?php endif; ?>
-	  
   	<?php echo form_open("auth/change_password", array('class' => 'form-horizontal', 'name' => 'email-signin')); ?>
       <fieldset>
+        <h6 class="offset1">Change Password</h6>
+        <br />
   			<div class="control-group">											
   				<label class="control-label">Old Password</label>
   				<div class="controls">

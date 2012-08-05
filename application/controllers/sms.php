@@ -51,7 +51,9 @@ class Sms extends MY_Controller {
 	  	$action = 'SHIPPED';
 	  	$order_status = 'Sent';
 	  	$order_id = $exp[1];
-	  	$tracking_number = $exp[2];
+	  	if ($exp[2]) {
+	  		$tracking_number = $exp[2];
+	  	}
 	  	$this->account_model->order_update($order_id, $order_status);
 	  	$response_message = 'Thank you for sending! Funds will be distributed when the buyer receives the item.';
 	  } elseif (preg_match('/CRAFTHELP/i', $sms_body)) {
