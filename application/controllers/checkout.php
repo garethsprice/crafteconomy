@@ -56,7 +56,10 @@ class Checkout extends MY_Controller {
   		  $seller = $this->products_model->get_seller($this->data['product']['id']);
   		  
   		  $this->account_model->payment_start_order($this->data['product']['id'], $user->id);
+  		  
   		  $this->sms_model->send($seller['phone'], 'NEW ORDER: ' . $this->data['product']['title'] . ' AMT: '. $this->data['product']['price'] .' SEND: ' . implode(', ', array($user->shipping_address, $user->shipping_city, $user->shipping_state, $user->shipping_postal_code, $user->shipping_country)) . '. Reply "OK ' . $this->db->insert_id() . '" to accept.');
+  		  
+  		  $this->products_model->add_purchase($this->data['product']['id']);
   		  
   			redirect('account/orders', 'refresh');
 		  } catch (Temboo_Exception_Execution $e) {
