@@ -8,7 +8,12 @@
 
 <section class="row">
 	<div class="span12">
-	<form class="form-horizontal" name="email-signin">
+	  
+    <?php if(!empty($message)): ?>
+    <div class="alert alert-block alert-error"><?php echo $message;?></div>
+    <?php endif; ?>
+
+  	<?php echo form_open("sell", array('class' => 'form-horizontal')); ?>
       <fieldset>
           <div class="control-group">
             <label class="control-label">Title</label>
@@ -16,6 +21,14 @@
               <?php print form_input($title); ?>
             </div>
           </div>
+
+          <div class="control-group">
+            <label class="control-label">Photo</label>
+            <div class="controls">
+              <?php print form_input($photo); ?>
+            </div>
+          </div>
+          
           <div class="control-group">
             <label class="control-label">Description</label>
             <div class="controls">
@@ -45,7 +58,7 @@
           <div id="confirmphone" class="hide control-group">
             <label class="control-label" for="password">Maker's Phone Number</label>
             <div class="controls">
-              <input type="text" class="input-xlarge required" id="phone">
+              <?php print form_input($maker_phone); ?>
             </div>
           </div>
           
@@ -54,6 +67,6 @@
         		<button class="btn btn-large">Cancel</button>
 
       		</div>
-      </form>
+      <?php echo form_close(); ?>
   </div>
 </section>

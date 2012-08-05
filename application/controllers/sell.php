@@ -5,6 +5,8 @@ class Sell extends MY_Controller {
   
 	public function index()
 	{	  
+	  $this->load->model('products_model');
+	  
 	  $this->load->library('form_validation');
 	  
   	$this->template->append_metadata('<script src="//api.filepicker.io/v0/filepicker.js"></script>');
@@ -27,6 +29,10 @@ class Sell extends MY_Controller {
 				'id' => 'price',
 				'class' => 'span2 input-xlarge required',
 			);
+			$this->data['maker_phone'] = array('name' => 'maker_phone',
+				'id' => 'maker_phone',
+				'class' => 'span2 input-xlarge required',
+			);
 			$this->template->append_metadata('<script src="//api.filepicker.io/v0/filepicker.js"></script>');
 			$this->data['photo'] = array('name' => 'photo',
 				'id' => 'photo',
@@ -42,6 +48,8 @@ class Sell extends MY_Controller {
 		else
 		{
 			// Save item
+			$this->products_model->set_entry();
+			redirect('browse', 'refresh');
 		}
 	}
 }
