@@ -30,6 +30,9 @@ class Sms extends MY_Controller {
 	  $tracking_number = NULL;
 	  $response_message = NULL;
 	  $order_status = NULL;
+	  $exp = NULL;
+	  $exp2 = NULL;
+	  $exp3 = NULL;
 
 	  if (preg_match('/OK/i', $sms_body)) {
 	  	$exp = explode(' ', $sms_body);
@@ -47,13 +50,18 @@ class Sms extends MY_Controller {
 	  	$this->account_model->order_update($order_id, $order_status);
 	  	$response_message = "We're sorry you had to cancel.";
 	  } elseif (preg_match('/SHIPPED/i', $sms_body)) {
-	  	$exp = explode(' ', $sms_body, 3);
+	  	$exp2 = explode(' ', $sms_body, 2);
+	  	$exp3 = explode(' ', $sms_body, 3);
 	  	$action = 'SHIPPED';
 	  	$order_status = 'Sent';
-	  	$order_id = $exp[1];
-	  	if ($exp[2]) {
-	  		$tracking_number = $exp[2];
-	  	}
+	  	if ($exp3) {
+		  	$order_id = $exp3[1];
+		  	if ($exp3[2]) {
+		  		$tracking_number = $exp[2];
+		  	}
+		  } else {
+		  	$order_id = $exp2[1];
+		  }
 	  	$this->account_model->order_update($order_id, $order_status);
 	  	$response_message = 'Thank you for sending! Funds will be distributed when the buyer receives the item.';
 	  } elseif (preg_match('/CRAFTHELP/i', $sms_body)) {
