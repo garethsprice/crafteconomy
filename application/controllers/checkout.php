@@ -10,6 +10,7 @@ class Checkout extends MY_Controller {
 	{	  
 	  $this->load->model('products_model');
 	  $this->load->model('account_model');
+	  $this->load->model('sms_model');
 	  
 	  $this->load->library('form_validation');
 	  $this->load->library('session');
@@ -24,7 +25,7 @@ class Checkout extends MY_Controller {
 		
 		if ($this->form_validation->run() == TRUE)
 		{
-		  include(APPPATH.'libraries/temboo/php-sdk/src/temboo.php');
+		  require_once(APPPATH.'libraries/temboo/php-sdk/src/temboo.php');
       // Instantiate a Temboo session with valid API key credentials
 
       $session = new Temboo_Session($this->config->item('temboo_account_name'), $this->config->item('temboo_api_key_name'), $this->config->item('temboo_api_key_value'));
@@ -52,7 +53,10 @@ class Checkout extends MY_Controller {
   		  
   		  $user = $this->ion_auth->user()->row();
   		  
+  		  $seller = $this->products_model->get_seller($this->data['product']['id']);
+  		  
   		  $this->account_model->payment_start_order($this->data['product']['id'], $user->id);
+  		  $this->sms_model->send($seller['phone'], 'NEW ORDER: ' . $this->data['product']['title'] . ' AMT: '. $this->data['product']['price'] .' SEND: ' . implode(', ', array($user->shipping_address, $user->shipping_city, $user->shipping_state, $user->shipping_postal_code, $user->shipping_country)) . '. Reply "OK ' . $this->db->insert_id() . '" to accept.');
   		  
   			redirect('account/orders', 'refresh');
 		  } catch (Temboo_Exception_Execution $e) {

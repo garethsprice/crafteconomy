@@ -7,7 +7,7 @@ class Account_model extends CI_Model {
   /**
    * Save an entry to the database
    */
-  public function payment_start_order($product, $buyer) {
+  public function payment_start_order($product, $buyer) {    
   	$DateOfRequest = date("Y-m-d H:i:s");
     $data['product_id'] = $product;
   	$data['date_purchased'] = $DateOfRequest;

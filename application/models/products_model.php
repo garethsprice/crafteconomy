@@ -16,6 +16,14 @@ class Products_model extends CI_Model {
   	return $query->row_array();
   }
   
+  public function get_seller($id)
+  {
+    $query = $this->db->get_where('products', array('id' => $id));
+  	$seller_id = $query->row()->seller_id;    
+  	$query = $this->db->get_where('users', array('id' => $seller_id));
+  	return $query->row_array();
+  }
+  
   /**
    * Save an entry to the database
    */
