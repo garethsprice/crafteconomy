@@ -56,6 +56,16 @@
             </div>
           </div>
 
+          <div class="control-group">
+            <label class="control-label" for="password"></label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" id="list_on_ebay" name="list_on_ebay" value="yes" disabled="true">
+                List this item on <img src="<?php print site_url('assets/themes/crafteconomy/img/ebay_logo.jpg'); ?>" width="7%" height="7%" /> (additional fees will apply)
+              </label>
+            </div>
+          </div>
+
           <hr>
           <div class="control-group">
             <label class="control-label" for="password"></label>
