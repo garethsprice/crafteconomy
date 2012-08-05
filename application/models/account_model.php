@@ -75,10 +75,11 @@ class Account_model extends CI_Model {
   {
     if ($id === FALSE)
     {
-
+      $user = $this->ion_auth->user()->row();
       $this->db->select('*'); 
       $this->db->from('products');
-      $this->db->join('orders', 'orders.product_id = products.seller_id');
+      $this->db->where('seller_id', $user->id);
+      $this->db->join('orders', 'orders.product_id = products.id');
       $query = $this->db->get();
       return $query->result_array();
       // $user = $this->ion_auth->user()->row();
