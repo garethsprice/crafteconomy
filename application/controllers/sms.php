@@ -65,7 +65,7 @@ class Sms extends MY_Controller {
 	  exit;
 	}
 
-	public function send()
+	public function send($to, $body)
 	{
 		require 'web/temboo-php-sdk/src/temboo.php';
 		// Instantiate a Temboo session with valid API key credentials
@@ -79,9 +79,9 @@ class Sms extends MY_Controller {
 		//AccountSID, AuthToken, Body, From, and To
 		$sendArray = array('AccountSID' => 'AC9ffdc4c5d3742f48f2921fa652f25575', 
 				'AuthToken' => 'adf8defd80c305655cbdf6b2218091a5', 
-				'Body' => 'hi test two', 
+				'Body' => $body, 
 				'From' => '3474973023', 
-				'To' => '4074089561'
+				'To' => $to
 			);
 		$inputs = $sendSMS->newInputs($sendArray);
 		// $inputs = $sendSMS->newInputs('<body>hi test one</body>
