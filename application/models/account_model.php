@@ -70,4 +70,21 @@ class Account_model extends CI_Model {
     $query = $this->db->get_where('orders', array('id' => $id));
     return $query->row_array();
   }
+
+  public function get_sales($id = FALSE)
+  {
+    if ($id === FALSE)
+    {
+
+      $user = $this->ion_auth->user()->row();
+      $query_seller_products = $this->db->get_where('products', array('seller_id' => $user->id));
+      $seller = $query_seller_products->result_array();
+      // when user ids are in the database
+      $query = $this->db->get_where('orders', $seller);
+      //$query = $this->db->get_where('orders', array('buyer_id' => 88));
+      return $query->result_array();
+    }
+    $query = $this->db->get_where('orders', array('id' => $id));
+    return $query->row_array();
+  }
 }

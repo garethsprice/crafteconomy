@@ -39,6 +39,9 @@
 				 <div class="offset9">
           <a href="orders">Orders</a>
         </div>
+        <div class="offset9">
+          <a href="sales_view">Sales</a>
+        </div>
   			<div class="form-actions">
   				<button type="submit" class="btn btn-large btn-primary">Change</button> 
   				<a class="btn btn-large" href="javascript:history.back()">Cancel</a>

@@ -61,6 +61,7 @@ class Auth extends MY_Controller {
     $this->template->title("Users");
 		$this->template->build('auth/index', $this->data);
 
+
 	}
 
 	//log the user in
@@ -166,6 +167,7 @@ class Auth extends MY_Controller {
 			);
 
 			//render
+
 			$this->template->build('auth/change_password', $this->data);
 		}
 		else
