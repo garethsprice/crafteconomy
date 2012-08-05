@@ -50,6 +50,17 @@
             <label class="control-label" for="password"></label>
             <div class="controls">
             	<label class="checkbox">
+            		<input type="checkbox" id="list_on_etsy" name="list_on_etsy" value="yes" disabled="true">
+            		List this item on <img src="<?php print site_url('assets/themes/crafteconomy/img/etsy_logo.jpg'); ?>" /> (additional fees will apply)
+          		</label>
+            </div>
+          </div>
+
+          <hr>
+          <div class="control-group">
+            <label class="control-label" for="password"></label>
+            <div class="controls">
+            	<label class="checkbox">
             		<input type="checkbox" id="confirm_listing_sms" name="confirm_listing_sms" value="yes">
             		Are you a reseller?
           		</label>
