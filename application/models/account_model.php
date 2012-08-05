@@ -62,8 +62,11 @@ class Account_model extends CI_Model {
     {
       $user = $this->ion_auth->user()->row();
       // when user ids are in the database
-      $query = $this->db->get_where('orders', array('buyer_id' => $user->id));
-      //$query = $this->db->get_where('orders', array('buyer_id' => 88));
+      $this->db->select('*'); 
+      $this->db->from('orders');
+      $this->db->where('buyer_id', $user->id);
+      $this->db->join('products', 'orders.product_id = products.id');
+      $query = $this->db->get();
       return $query->result_array();
     }
 
@@ -81,19 +84,14 @@ class Account_model extends CI_Model {
       $this->db->where('seller_id', $user->id);
       $this->db->join('orders', 'orders.product_id = products.id');
       $query = $this->db->get();
+      
       return $query->result_array();
-      // $user = $this->ion_auth->user()->row();
-      // $query_seller_products = $this->db->get_where('products', array('seller_id' => $user->id));
-
-
-      // $seller = $query_seller_products->result_array();
-      // foreach($seller AS $t) {
-      // // when user ids are in the database
-      // $query[$t['id']] = $this->db->get_where('orders', array('product_id' => $seller));
-      // //$query = $this->db->get_where('orders', array('buyer_id' => 88));
-      // return $query->result_array();
     }
-    $query = $this->db->get_where('orders', array('id' => $id));
+  
+    $query = $this->db->select('orders.*, products.title')
+                  ->from('orders')
+                  ->join('products', 'orders.product_id = products.id');
+                  
     return $query->row_array();
   }
   
