@@ -71,9 +71,9 @@ class Account_model extends CI_Model {
     return $query->row_array();
   }
 
-  public function get_sales($id = FALSE)
+  public function get_sales($id = NULL)
   {
-    if ($id === FALSE)
+    if (!$id)
     {
       $user = $this->ion_auth->user()->row();
       $this->db->select('*'); 
@@ -95,5 +95,26 @@ class Account_model extends CI_Model {
     }
     $query = $this->db->get_where('orders', array('id' => $id));
     return $query->row_array();
+  }
+  
+  /**
+   * Returns the balance as a floating point number
+   */
+  public function get_balance($id = NULL) 
+  {
+    if(!$id) {
+      $user = $this->ion_auth->user()->row();
+    } else {
+      $user = $this->db->get_where('users', array('id' => $id))->row_array();
+    }
+    return $user->account_balance;
+  }
+  
+  /**
+   * Allows a user to cash out via Paypal
+   */
+  public function cashout() 
+  {
+    
   }
 }
