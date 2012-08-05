@@ -51,7 +51,7 @@ class Sms extends MY_Controller {
 	  	$response_message = "We're sorry you had to cancel.";
 	  } elseif (preg_match('/SHIPPED/i', $sms_body)) {
 	  	$exp2 = explode(' ', $sms_body, 2);
-	  	$exp3 = explode(' ', $sms_body, 3);
+	  	//$exp3 = explode(' ', $sms_body, 3);
 	  	$action = 'SHIPPED';
 	  	$order_status = 'Sent';
 	  	if ($exp3) {
