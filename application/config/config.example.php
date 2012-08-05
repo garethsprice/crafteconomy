@@ -368,5 +368,16 @@ $config['encryption_key'] = "CR4FT3CONOMY";
 $config['filepicker_api_key'] = 'AIYY7zJrPSbS5GPjIzVuBz';
 $config['filepicker_option_services'] = 'COMPUTER,WEBCAM,URL,IMAGE_SEARCH,GMAIL,GOOGLE_DRIVE,DROPBOX';
 
+$config['temboo_account_name'] = 'crafteconomy';
+$config['temboo_api_key_name'] = 'crafteconomy';
+$config['temboo_api_key_value'] = 'e1cb547d-69ef-494a-b';
+
+// Test key
+$config['stripe_secret_key'] = 'sk_07YH5s5ueyqghi2mYsHkBai3wAj4r';
+
+$config['twilio_accountsid'] = 'AC9ffdc4c5d3742f48f2921fa652f25575';
+$config['twilio_authtoken'] = 'adf8defd80c305655cbdf6b2218091a5';
+$config['twilio_from'] = '3474973023'; 
+
 /* End of file config.php */
 /* Location: ./application/config/config.php */

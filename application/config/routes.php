@@ -44,6 +44,7 @@ $route['login'] = 'auth/login';
 $route['logout'] = 'auth/logout';
 $route['register'] = 'auth/create_user';
 $route['account/settings'] = 'auth/change_password';
+$route['account/orders'] = 'order/index';
 $route['browse'] = 'products/browse';
 $route['product/(:any)'] = 'products/view/$1';
 $route['checkout/(:any)'] = 'checkout/index/$1';

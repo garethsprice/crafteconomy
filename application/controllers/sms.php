@@ -77,25 +77,20 @@ class Sms extends MY_Controller {
 	{
 		require 'web/temboo-php-sdk/src/temboo.php';
 		// Instantiate a Temboo session with valid API key credentials
-		//$session = new Temboo_Session('ACCOUNT_NAME', 'API_KEY_NAME', 'API_KEY_VALUE');
-		$session = new Temboo_Session("crafteconomy", "crafteconomy", "e1cb547d-69ef-494a-b");
+		$session = new Temboo_Session($this->config->item('temboo_account_name'), $this->config->item('temboo_api_key_name'), $this->config->item('temboo_api_key_value'));
 
 		// Instantiate the choreography using the session object
 		$sendSMS = new Twilio_SendSMS($session);
 
 		// Get an input object for the choreo
-		//AccountSID, AuthToken, Body, From, and To
-		$sendArray = array('AccountSID' => 'AC9ffdc4c5d3742f48f2921fa652f25575', 
-				'AuthToken' => 'adf8defd80c305655cbdf6b2218091a5', 
+		// AccountSID, AuthToken, Body, From, and To
+		$sendArray = array('AccountSID' => $this->config->item('twilio_accountsid'), 
+				'AuthToken' => $this->config->item('twilio_authtoken'), 
 				'Body' => $body, 
-				'From' => '3474973023', 
+				'From' => $this->config->item('twilio_from'), 
 				'To' => $to
 			);
 		$inputs = $sendSMS->newInputs($sendArray);
-		// $inputs = $sendSMS->newInputs('<body>hi test one</body>
-		// <from>+13474973023</from>
-		// <to>+14074089561</to>
-		// ');
 
 		// Execute choreography and get results
 		$results = $sendSMS->execute($inputs)->getResults();
