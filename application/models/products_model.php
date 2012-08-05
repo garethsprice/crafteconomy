@@ -54,4 +54,24 @@ class Products_model extends CI_Model {
     
     return $this->db->insert('products', $data);
   }
+  
+  /**
+   * Increments a seller's and intermediary's account balance
+   */
+  public function add_purchase($id) {
+    $product = $this->get_entries($id);
+    
+    if($product['intermediary_id'] > 0) {
+      $intermediary = $this->db->get_where('users', array('id' => $product['intermediary_id']))->row_array();
+      $intermediary_commission = $product['price'] * 0.10;
+      
+      $this->db->query('UPDATE users SET account_balance = account_balance + ' . $intermediary_commission . ' WHERE id=' . $intermediary['id']);
+      
+      $seller_commission = $product['price'] * 0.85;
+    } else {
+      $seller_commission = $product['price'] * 0.95;
+    }
+    
+    return $this->db->query('UPDATE users SET account_balance = account_balance + ' . $seller_commission . ' WHERE id=' . $product['seller_id']);
+  }
 }
