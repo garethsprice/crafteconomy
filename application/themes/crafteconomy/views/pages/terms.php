@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 <section class="row featured">
 	<div class="span12">
 		<header class="page-header">
@@ -9,13 +7,7 @@
 		</header>
 	</div>
 	<div class="span12">
-=======
-<br /><br />
-<h2>
-	Web Site Terms and Conditions of Use
-</h2>
 
->>>>>>> d48079445c0329174e09ea6a74efd1d1990ef79e
 <h3>
 	1. Terms
 </h3>
