@@ -113,6 +113,27 @@ section.featured .span6 p {
 	font-size: 18px;
 }
 
+section.featured .span4 i {
+	display: block;
+	float: left;
+	width: 60px;
+	height: 60px;
+	background: url('../img/icons.png');
+	margin: 10px 20px 45px 10px;
+}
+
+section.featured .span4 i.gear {
+	background-position: -60px 0px;
+}
+
+section.featured .span4 i.eye {
+	background-position: 0px -60px;
+}
+
+section.featured .span4 i.case {
+	background-position: -60px -60px;
+}
+
 section.featured .span6 i {
 	display: block;
 	float: left;

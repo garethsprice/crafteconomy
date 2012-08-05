@@ -5,21 +5,21 @@
 			<!-- Carousel items -->
 			<div class=carousel-inner>
 				<div class="active item">
-				<img src="<?php print site_url('assets/themes/crafteconomy/img/carousel/normal/1.jpg'); ?>" width=1180 alt="">
+				<img src="<?php print site_url('assets/themes/crafteconomy/img/image1.png'); ?>" width=1180 alt="">
 					<div class="carousel-caption align-right">
 						<h1>Sunil has no </h1>
 						<h1>internet access.</h1>
 					</div>
 				</div>
 				<div class="item">
-					<img src="<?php print site_url('assets/themes/crafteconomy/img/carousel/normal/2.jpg'); ?>" width=1180 alt="">
+					<img src="<?php print site_url('assets/themes/crafteconomy/img/image2.png'); ?>" width=1180 alt="">
 					<div class=carousel-caption>
 						<h1>All Sunil has is</h1> 
 						<h1>a craft and a cellphone.</h1>
 					</div>
 				</div>
 				<div class="item">
-					<img src="<?php print site_url('assets/themes/crafteconomy/img/carousel/normal/3.jpg'); ?>" width=1180 alt="">
+					<img src="<?php print site_url('assets/themes/crafteconomy/img/image3.png'); ?>" width=1180 alt="">
 					<div class="carousel-caption align-right">
 						<h1>CraftEconomy connects </h1>
 						<h1>Sunil to global markets</h1>
@@ -43,19 +43,19 @@
 			</h1>
 		</header>
 	</div>
-	<div class="span6">
+	<div class="span4">
 		<i class=box></i>
-		<h2>Millions of Artisans</h2>
+		<h3>Millions of Artisans</h3>
 		<p>2.9 billion people in developing world with basic cellphone service but without access to the Internet.</p>
 	</div>
-	<div class="span6">
+	<div class="span4">
 		<i class=eye></i>
-		<h2>Socially Responsible Buying</h2>
+		<h3>Socially Responsible Buying</h3>
 		<p>Buy handmade goods from around the world. Connect with craftsmen and hear their stories. </p>
 	</div>
-	<div class="offset3 span6">
+	<div class="span4">
 		<i class=gear></i>
-		<h2>Three Party Trust</h2>
+		<h3>Three Party Trust</h3>
 		<p>Craftsmen can use SMS to receive confirmation of every part of the sales process. </p>
 	</div>
 	
