@@ -1,4 +1,4 @@
-
+<br /><br />
 <h2>
 	Web Site Terms and Conditions of Use
 </h2>
