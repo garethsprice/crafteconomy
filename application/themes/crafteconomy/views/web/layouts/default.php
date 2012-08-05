@@ -58,7 +58,7 @@
   			<!-- Zhe Logo & name -->
   			<div class="span4">
   				<h1>
-  				  <a href="/">
+  				  <a href="<?php print site_url('/'); ?>">
     					<img src="<?php print site_url('assets/themes/crafteconomy/img/logo.png'); ?>" alt="logo" id="logo">
     				</a>
     				Craft Economy

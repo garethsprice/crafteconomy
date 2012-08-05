@@ -5,21 +5,21 @@
 			<!-- Carousel items -->
 			<div class=carousel-inner>
 				<div class="active item">
-				<img src="/assets/themes/crafteconomy/img/carousel/normal/1.jpg" width=1180 alt="">
+				<img src="<?php print site_url('assets/themes/crafteconomy/img/carousel/normal/1.jpg'); ?>" width=1180 alt="">
 					<div class="carousel-caption align-right">
 						<h1>Sunil has no </h1>
 						<h1>internet access.</h1>
 					</div>
 				</div>
 				<div class="item">
-					<img src="/assets/themes/crafteconomy/img/carousel/normal/2.jpg" width=1180 alt="">
+					<img src="<?php print site_url('assets/themes/crafteconomy/img/carousel/normal/2.jpg'); ?>" width=1180 alt="">
 					<div class=carousel-caption>
 						<h1>All Sunil has is</h1> 
 						<h1>a craft and a cellphone.</h1>
 					</div>
 				</div>
 				<div class="item">
-					<img src="/assets/themes/crafteconomy/img/carousel/normal/3.jpg" width=1180 alt="">
+					<img src="<?php print site_url('assets/themes/crafteconomy/img/carousel/normal/3.jpg'); ?>" width=1180 alt="">
 					<div class="carousel-caption align-right">
 						<h1>CraftEconomy connects </h1>
 						<h1>Sunil to global markets</h1>
@@ -84,13 +84,13 @@
 	<div class=span3>
 		<ul class="thumbnails">
 			<li class="span3">
-				<a href="img/media/normal/Image001.jpg" rel="lightbox[album1]" class="thumbnail">
-					<img src="/assets/themes/crafteconomy/img/media/thumbs/Image001.jpg" alt="">
+				<a href="<?php print site_url('img/media/normal/Image001.jpg'); ?>" rel="lightbox[album1]" class="thumbnail">
+					<img src="<?php print site_url('assets/themes/crafteconomy/img/media/thumbs/Image001.jpg'); ?>" alt="">
 				</a>
 			</li>
 			<li class="span3">
-				<a href="img/media/normal/Image002.jpg" rel="lightbox[album1]" class="thumbnail">
-					<img src="/assets/themes/crafteconomy/img/media/thumbs/Image002.jpg" alt="">
+				<a href="<?php print site_url('img/media/normal/Image002.jpg'); ?>" rel="lightbox[album1]" class="thumbnail">
+					<img src="<?php print site_url('assets/themes/crafteconomy/img/media/thumbs/Image002.jpg'); ?>" alt="">
 				</a>
 			</li>
 		</ul>

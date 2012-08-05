@@ -3,6 +3,7 @@
 .livereload
 
 */config/development
+*/config/config.php
 */config/database.php
 */logs/log-*.php
 */logs/!index.html
