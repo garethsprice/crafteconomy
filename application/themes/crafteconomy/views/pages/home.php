@@ -46,7 +46,7 @@
 	<div class="span4">
 		<i class=box></i>
 		<h3>Millions of Artisans</h3>
-		<p>There are <strong>2.9 billion people</strong> in developing world with basic cellphone service, but no Internet. Over 20 million are craftsman and artisans.</p>
+		<p>There are <strong>2.9 billion people</strong> in developing world with basic cellphone service, but no Internet. Over 50 million are craftsman and artisans.</p>
 	</div>
 	<div class="span4">
 		<i class=eye></i>
