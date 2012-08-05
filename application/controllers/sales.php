@@ -12,6 +12,7 @@ class Sales extends MY_Controller {
 	{
 		$data = array();
 	  $data['orders'] = $this->account_model->get_sales();
+	  $data['balance'] = $this->account_model->get_balance();
     $this->template->title('Browse Sales');
   	$this->template->build('account/sales_view', $data);
 	}

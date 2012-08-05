@@ -51,12 +51,12 @@
 	<div class="span4">
 		<i class=eye></i>
 		<h3>Socially Responsible Purchases</h3>
-		<p>Buy handmade goods from around the world. Connect directly with craftsmen and <strong>help improve livelihoods</strong>. </p>
+		<p>Buy handmade goods from around the world. Connect directly with crafters and <strong>help improve livelihoods</strong>. </p>
 	</div>
 	<div class="span4">
 		<i class=gear></i>
 		<h3>Three Party Trust</h3>
-		<p>If you've never been online, the Internet can be a scary place. Craftsmen receive <strong>SMS notifications</strong> at every step of the sales process. </p>
+		<p>Crafters can list items through intermediaries then manage their own orders via <strong>two-way SMS</strong> at every step of the sales process.</p>
 	</div>
 	
 </section>
@@ -69,14 +69,14 @@
 		</header>
 	</div>
 	<div style="margin-left:20px;" class="row">
-		<div style="margin-top:20px;" class="span1">
+		<div style="margin-top:20px;margin-right:20px;" class="span1">
 			<span class="badge">1</span>
 		</div>
 		<div class="span3">
 			<h2>Craftsman makes the item</h2>
 			<p>Once the item is created, craftsman delivers the item to reseller.</p>
 		</div>
-		<div class="span7">
+		<div class="span7 pull-right">
 			<ul class="thumbnails">
 				<li>
 					<img src="<?php print site_url('assets/themes/crafteconomy/img/hands1.png'); ?>" alt="">
@@ -85,7 +85,7 @@
 		</div>
 	</div>
 	<div style="margin-left:20px;" class="row">
-		<div style="margin-top:20px;" class="span1">
+		<div style="margin-top:20px;margin-right:20px;" class="span1">
 			<span class="badge">2</span>
 		</div>
 		<div class="span3">
@@ -93,7 +93,7 @@
 			<p>Reseller lists the item on CraftEconomy.
 				Craftsman is notified by SMS when his item is listed, including the listing price. </p>
 		</div>
-		<div class="span7">
+		<div class="span7 pull-right">
 			<ul class="thumbnails">
 				<li>
 					<div >
@@ -104,14 +104,14 @@
 		</div>
 	</div>
 	<div style="margin-left:20px;" class="row">
-		<div style="margin-top:20px;" class="span1">
+		<div style="margin-top:20px;margin-right:20px;" class="span1">
 			<span class="badge">3</span>
 		</div>
 		<div class="span3">
 			<h2>Item is ordered</h2>
 			<p>Once a buyer places an order on CraftEconomy, the craftsman is notified by SMS and the reseller ships the item. Payment is transferred to reseller. </p>
 		</div>
-		<div class="span7">
+		<div class="span7 pull-right">
 			<ul class="thumbnails">
 				<li>
 					<div >
@@ -122,14 +122,14 @@
 		</div>
 	</div>
 	<div style="margin-left:20px;" class="row">
-		<div style="margin-top:20px;" class="span1">
+		<div style="margin-top:20px;;margin-right:20px;" class="span1">
 			<span class="badge">4</span>
 		</div>
 		<div class="span3">
 			<h2>Everyone wins!</h2>
 			<p>Buyer receives their item. Reseller collects a commission. And craftsman is compensated for his hard work.
 		</div>
-		<div class="span7">
+		<div class="span7 pull-right">
 			<ul class="thumbnails">
 				<li>
 					<img src="<?php print site_url('assets/themes/crafteconomy/img/hands4.png'); ?>" alt="">

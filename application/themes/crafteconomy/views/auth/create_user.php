@@ -43,7 +43,7 @@
           <div class="controls">
           	<label class="checkbox">
           		<input type="checkbox" id="showbio" name="showbio" value="no">
-          		I want to sell items on Craft Economy
+          		I want to sell items on CraftEconomy
         		</label>
           </div>
         </div>

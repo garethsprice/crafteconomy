@@ -42,8 +42,16 @@ class MY_Controller extends CI_Controller {
       $nav['account/settings'] = 'Account';
       $nav['logout'] = 'Log out';
     }
-    
+
     $active = ltrim($_SERVER['REQUEST_URI'], '/');
+    
+    $account_nav = array();
+    $this->menu->container_tag_class = 'nav nav-list';
+    $account_nav['account/settings'] = 'Account Settings';
+    $account_nav['account/orders'] = 'Items Bought';
+    $account_nav['account/sales_view'] = 'Items Sold';
+    $account_menu = $this->menu->render($account_nav, $active, NULL, 'basic');
+    $this->template->set('account_nav', $account_menu);
     
     $this->menu->container_tag_id = 'main-nav';
     $this->menu->container_tag_class = 'nav nav-pills pull-right';

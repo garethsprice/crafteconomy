@@ -9,7 +9,12 @@
 </div>
 
 <div class="row">
-<div class="span12">
+  <div class="span3">    
+    <div class="well sidebar-nav">
+      <?php print $account_nav; ?>
+    </div>
+  </div>
+<div class="span9">
   <table class="table table-striped table-bordered table-condensed">
     <thead>
       <tr>

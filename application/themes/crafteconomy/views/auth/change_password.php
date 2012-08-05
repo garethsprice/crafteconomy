@@ -7,13 +7,18 @@
 </div>
 
 <section class="row">
-	<div class="span12">
+  <div class="span3">    
+    <div class="well sidebar-nav">
+      <?php print $account_nav; ?>
+    </div>
+  </div>
+	<div class="span9">
     <?php if(!empty($message)): ?>
     <div class="alert alert-block alert-error"><?php echo $message;?></div>
     <?php endif; ?>
   	<?php echo form_open("auth/change_password", array('class' => 'form-horizontal', 'name' => 'email-signin')); ?>
       <fieldset>
-        <h6 class="offset1">Change Password</h6>
+        <h3 style="margin-left: 20px;">Change Password</h3>
         <br />
   			<div class="control-group">											
   				<label class="control-label">Old Password</label>
@@ -36,12 +41,7 @@
   					<?php echo form_input($new_password_confirm);?>
   				</div> <!-- /controls -->				
   			</div> <!-- /control-group -->
-				 <div class="offset9">
-          <a href="orders">Orders</a>
-        </div>
-        <div class="offset9">
-          <a href="sales_view">Sales</a>
-        </div>
+  			
   			<div class="form-actions">
   				<button type="submit" class="btn btn-large btn-primary">Change</button> 
   				<a class="btn btn-large" href="javascript:history.back()">Cancel</a>

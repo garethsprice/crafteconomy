@@ -10,7 +10,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 
-	<title><?php echo $template['title']; ?></title> 
+	<title><?php echo implode(' | ', array($template['title'], $this->config->item('site_title', 'ion_auth'))); ?></title> 
   
 	<!-- Zhe fonts und styles -->
 	<link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
@@ -79,7 +79,7 @@
   				<div class=row>
   					<div class=span5>
   						<h3>Contact information</h3>
-  						<p>Craft Economy<br>
+  						<p>CraftEconomy<br>
   							500 7th Ave<br>
   							New York, NY 10018<br>
   					</div>

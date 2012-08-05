@@ -18,13 +18,13 @@ class Account_model extends CI_Model {
     
 		$result = $this->db->insert('orders', $data);
 		
-		$message = '<h1>Craft Economy</h1>
+		$message = '<h1>CraftEconomy</h1>
   	<p>Your order was received and is processing.</p>
   	<p>Thanks for using Craft Economy!</p>';
 		$this->email->clear();
 		$this->email->from($this->config->item('admin_email', 'ion_auth'), $this->config->item('site_title', 'ion_auth'));
 		$this->email->to($buyer['email']);
-		$this->email->subject('Receipt for your Craft Economy order (#' . $this->db->insert_id() . ')');
+		$this->email->subject('Receipt for your CraftEconomy order (#' . $this->db->insert_id() . ')');
 		$this->email->message($message);
     $this->email->send();
     
@@ -42,13 +42,13 @@ class Account_model extends CI_Model {
 
     if($result) {
   		//$message = $this->load->view('account/email/order_update.tpl.php', $data);
-  		$message = '<h1>Craft Economy</h1>
+  		$message = '<h1>CraftEconomy</h1>
     	<p>Your order is now ' . $order_status . '</p>
-    	<p>Thanks for using Craft Economy!</p>';
+    	<p>Thanks for using CraftEconomy!</p>';
   		$this->email->clear();
   		$this->email->from($this->config->item('admin_email', 'ion_auth'), $this->config->item('site_title', 'ion_auth'));
   		$this->email->to($buyer['email']);
-  		$this->email->subject('Update for your Craft Economy order (#' . $order['id'] . ')');
+  		$this->email->subject('Update for your CraftEconomy order (#' . $order['id'] . ')');
   		$this->email->message($message);
       $this->email->send();
     }
@@ -71,9 +71,9 @@ class Account_model extends CI_Model {
     return $query->row_array();
   }
 
-  public function get_sales($id = FALSE)
+  public function get_sales($id = NULL)
   {
-    if ($id === FALSE)
+    if (!$id)
     {
       $user = $this->ion_auth->user()->row();
       $this->db->select('*'); 
@@ -95,5 +95,26 @@ class Account_model extends CI_Model {
     }
     $query = $this->db->get_where('orders', array('id' => $id));
     return $query->row_array();
+  }
+  
+  /**
+   * Returns the balance as a floating point number
+   */
+  public function get_balance($id = NULL) 
+  {
+    if(!$id) {
+      $user = $this->ion_auth->user()->row();
+    } else {
+      $user = $this->db->get_where('users', array('id' => $id))->row_array();
+    }
+    return $user->account_balance;
+  }
+  
+  /**
+   * Allows a user to cash out via Paypal
+   */
+  public function cashout() 
+  {
+    
   }
 }
