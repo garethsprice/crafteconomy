@@ -17,8 +17,8 @@ class Account_model extends CI_Model {
 	}
 
   public function order_update($order, $order_status) {
-    $data['id'] = $order;
     $data['order_status'] = $order_status;
+    $this->db->where('id', $order);
     return $this->db->update('orders', $data);
   }
 }
