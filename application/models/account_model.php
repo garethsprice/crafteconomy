@@ -28,8 +28,8 @@ class Account_model extends CI_Model {
     {
       $user = $this->ion_auth->user()->row();
       // when user ids are in the database
-      //$query = $this->db->get_where('orders', array('buyer_id' => $user -> id));
-      $query = $this->db->get_where('orders', array('buyer_id' => 88));
+      $query = $this->db->get_where('orders', array('buyer_id' => $user->id));
+      //$query = $this->db->get_where('orders', array('buyer_id' => 88));
       return $query->result_array();
     }
 
