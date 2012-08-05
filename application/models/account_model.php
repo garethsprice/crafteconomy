@@ -13,12 +13,12 @@ class Account_model extends CI_Model {
   	$data['date_purchased'] = $DateOfRequest;
     $data['buyer_id'] = $buyer;
     $data['order_status'] = 'Pending';
-		return $this->db->update('orders', $data);
+		return $this->db->insert('orders', $data);
 	}
 
   public function order_update($order, $order_status) {
     $data['id'] = $order;
     $data['order_status'] = $order_status;
-    return $this->db->insert('orders', $data);
+    return $this->db->update('orders', $data);
   }
 }
