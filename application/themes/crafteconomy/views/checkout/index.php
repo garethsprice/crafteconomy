@@ -23,7 +23,7 @@
     <?php endif; ?>
 	  
 	  <?php print form_open('checkout/' . $product['id'], array('class' => 'form_horizontal')); ?>
-      <fieldset>
+      <fieldset style="margin-left: 21px;">
           <div class="control-group">
             <label class="control-label" for="email">Credit Card</label>
             <div class="controls">
