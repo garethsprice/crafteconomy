@@ -16,7 +16,9 @@
       				<div class="thumbnail">
         				<img src="<?php print $product['photo']; ?>" alt="">
         				<div class="caption">
+                    <div style="white-space: nowrap;overflow: hidden; text-overflow:ellipsis;">
           					<h4><?php print $product['title']; ?></h4>
+                  </div>
           					<p class='more-info hide'><?php print $product['description']; ?></p>
             			<div >
             				<span class="price">$<?php print $product['price']; ?></span>

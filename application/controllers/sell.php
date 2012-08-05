@@ -33,7 +33,7 @@ class Sell extends MY_Controller {
 		$this->data['description'] = array('name' => 'description',
 			'id' => 'description',
 			'type' => 'textarea',
-			'class' => 'span9',
+			'class' => 'span8',
 		);
 		$this->data['price'] = array('name' => 'price',
 			'id' => 'price',
