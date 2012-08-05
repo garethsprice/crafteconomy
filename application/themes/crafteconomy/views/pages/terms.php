@@ -1,8 +1,13 @@
 
-<h2>
-	Web Site Terms and Conditions of Use
-</h2>
-
+<section class="row featured">
+	<div class="span12">
+		<header class="page-header">
+			<h1>
+				Web Site Terms and Conditions of Use
+			</h1>
+		</header>
+	</div>
+	<div class="span12">
 <h3>
 	1. Terms
 </h3>
@@ -130,5 +135,7 @@
 
 <p>
 	We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. 
-</p>		
+</p>	
+</div>
+</section>
 

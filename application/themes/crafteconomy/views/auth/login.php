@@ -33,7 +33,7 @@
       		<button class="btn btn-large">Cancel</button>
 
     		</div>
-    		<div class="control-group">
+    		<div style="padding-bottom:20px;padding-top:0px;" class="control-group">
         	<div class="controls">
         		<a href="<?php print site_url('auth/forgot_password'); ?>">Forgot your password?</a>
         	</div>

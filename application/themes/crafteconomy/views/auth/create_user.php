@@ -49,8 +49,11 @@
         </div>
 
         <fieldset id="makers_bio" class="hide">
-
+        <div class="control-group">
+        <div class="controls span6">
         <p class="help-block">Thanks for your interest in selling on Craft Economy! We just need a few additional details from you.</p>
+      </div>
+    </div>
 
   			<div class="control-group">											
   				<label class="control-label">Phone number</label>
@@ -113,7 +116,7 @@
         
           <div class="control-group">
             <label class="control-label" for="password">Maker's Bio</label>
-            <div class="controls">
+            <div class="controls span6">
               <?php print form_textarea($bio); ?>
               <p class="help-block">Describe yourself and your business, a more personal description helps buyers to connect with you.</p>
             </div>

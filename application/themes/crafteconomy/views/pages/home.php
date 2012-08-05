@@ -24,7 +24,7 @@
 						<h1>CraftEconomy connects </h1>
 						<h1>Sunil to global markets</h1>
 						<h1>for handmade goods.</h1>
-						<p><a href="#story" class="btn btn-default btn-large btn-info">See How It Works</a> <a href="browse" class="btn btn-primary btn-warning btn-large">Buy Sunil's Pottery</a></p>
+						<p><a href="#story" class="btn btn-default btn-large btn-info">See How It Works</a> <a href="browse" class="btn btn-warning btn-large">Buy Sunil's Pottery</a></p>
 					</div>
 				</div>
 			</div>

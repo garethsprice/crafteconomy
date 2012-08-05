@@ -4,7 +4,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Exo', sans-serif;
 	line-height: 100%;
 }
 
@@ -33,6 +33,7 @@ a, p, li {
 
 .page-header {
 	margin-top: 40px;
+	border-bottom: 1px dashed #ccc;
 }
 
 .page-header small {
@@ -274,3 +275,27 @@ article form {
 	border-radius: 10px;
 	box-shadow: inset 0 0 6px #aaa;
 }
+
+.btn-info {
+	background-color: #007100;
+}
+
+footer a:link {color:#007100;}      /* unvisited link */
+footer a:visited {color:#007100;}  /* visited link */
+footer a:hover {color:#007100;}  /* mouse over link */
+footer a:active {color:#007100;}  /* selected link */
+
+.form-horizontal .control-label {
+	width: 220px;
+}
+.form-horizontal .controls {
+	margin-left: 240px;
+}
+
+.form-horizontal .controls a {
+	padding-bottom: 20px;
+}
+.form-horizontal .form-actions {
+	padding-left: 240px;
+}
+
