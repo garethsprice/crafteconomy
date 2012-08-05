@@ -25,4 +25,12 @@ class Order extends MY_Controller {
     $this->template->title('Account Balance and Payments');
   	$this->template->build('account/payments');
 	}
+
+	public function index()
+	{
+		$data = array();
+	  $data['orders'] = $this->account_model->get_orders();
+    $this->template->title('Browse Orders');
+  	$this->template->build('account/orders', $data);
+	}
 }

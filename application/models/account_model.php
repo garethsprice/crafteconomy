@@ -21,4 +21,17 @@ class Account_model extends CI_Model {
     $this->db->where('id', $order);
     return $this->db->update('orders', $data);
   }
+
+  public function get_orders($id = FALSE)
+  {
+    if ($id === FALSE)
+    {
+      $user = $this->ion_auth->user()->row();
+      $query = $this->db->get_where('orders', array('buyer_id' => $user -> id));
+      return $query->result_array();
+    }
+
+    $query = $this->db->get_where('orders', array('id' => $id));
+    return $query->row_array();
+  }
 }
