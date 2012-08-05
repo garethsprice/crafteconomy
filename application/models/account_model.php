@@ -18,8 +18,27 @@ class Account_model extends CI_Model {
 
   public function order_update($order, $order_status) {
     $data['order_status'] = $order_status;
+    
     $this->db->where('id', $order);
-    return $this->db->update('orders', $data);
+    $result = $this->db->update('orders', $data);
+  
+    $order = $this->get_orders($order);
+    $buyer = $this->db->get_where('users', array('id' => $order['buyer_id']))->row_array();
+
+    if($result) {
+  		//$message = $this->load->view('account/email/order_update.tpl.php', $data);
+  		$message = '<h1>Craft Economy</h1>
+    	<p>Your order is now ' . $order_status . '</p>
+    	<p>Thanks for using Craft Economy!</p>';
+  		$this->email->clear();
+  		$this->email->from($this->config->item('admin_email', 'ion_auth'), $this->config->item('site_title', 'ion_auth'));
+  		$this->email->to($buyer['email']);
+  		$this->email->subject('Your Craft Economy order (#' . $order['id'] . ')');
+  		$this->email->message($message);
+      $this->email->send();
+    }
+    
+    return $result;
   }
 
   public function get_orders($id = FALSE)

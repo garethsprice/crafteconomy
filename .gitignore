@@ -4,6 +4,7 @@
 
 */config/development
 application/config/config.php
+application/config/email.php
 */config/database.php
 */logs/log-*.php
 */logs/!index.html
