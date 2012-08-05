@@ -24,6 +24,8 @@ class Products_model extends CI_Model {
     $date_submitted = date('Y-m-d H:i:s');
     $user = $this->ion_auth->user()->row();
 
+	  $maker_phone = $this->input->post('maker_phone', TRUE);
+
     $data = array(
       'seller_id' => $user->id,
       'title' => $this->input->post('title', TRUE),
@@ -33,6 +35,14 @@ class Products_model extends CI_Model {
       'date_submitted' => $date_submitted,
       'status' => 1,
     );
+
+	  if(!empty($maker_phone)) {
+	    // Check intermediary
+	    $query = $this->db->get_where('users', array('phone' => $maker_phone));
+	    $row = $query->row_array();
+	    $data['seller_id'] = $row['id'];
+	    $data['intermediary_id'] = $user->id;
+	  }
     
     return $this->db->insert('products', $data);
   }
