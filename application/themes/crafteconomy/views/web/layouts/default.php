@@ -107,7 +107,7 @@
 	    	  <div class="container">
 				<div class="row">
 				  <div class="span5" style="text-align: left;">
-				    <p><strong>Powered by:</strong> Twilio, SendGrid, Temboo,<br/>Stripe, Constant Contact, Paypal, Etsy</p>
+				    <p><strong>Powered by:</strong> Twilio, SendGrid, Temboo,<br/>Stripe, Constant Contact, Paypal, Etsy, eBay</p>
 				  </div>
 					<div class="span7">
 						<p>&copy; CraftEconomy <?php print date('Y'); ?> All Rights Reserved - <a href="<?php print site_url('terms'); ?>">Terms of Service</a></p>
