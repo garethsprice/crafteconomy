@@ -1,6 +1,6 @@
 /* General Stuffs */
 body {
-	background: url("../img/gplay.png") repeat-x;
+	background: url("../img/strange_bullseyes.png") repeat;
 }
 
 h1, h2, h3, h4, h5 {
@@ -234,6 +234,10 @@ td {
 	font-size: large;
 }
 
+article {
+
+}
+
 article form {
 	box-shadow: 1px 1px 4px #eee;	
 	background-image: url('../img/subtle_dots.png');
@@ -247,3 +251,21 @@ article form {
 	background-color: transparent;
 }
 
+.badge {
+	padding: 11px 19px 12px;
+	border-radius: 25px;
+	margin-top: 10px;
+	font-size: x-large;
+	font-weight: bold;
+	background-color: #007100;
+}
+
+
+#main-nav a {
+	font-size: large;
+}
+
+.image_holder {
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px #aaa;
+}

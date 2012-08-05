@@ -23,8 +23,8 @@
 					<div class="carousel-caption align-right">
 						<h1>CraftEconomy connects </h1>
 						<h1>Sunil to global markets</h1>
-						<h1>for his goods.</h1>
-						<p><a class="btn btn-default btn-large btn-info">See How It Works</a> <a class="btn btn-primary btn-warning btn-large">Buy Sunil's Pottery</a></p>
+						<h1>for handmade goods.</h1>
+						<p><a href="#story" class="btn btn-default btn-large btn-info">See How It Works</a> <a href="browse" class="btn btn-primary btn-warning btn-large">Buy Sunil's Pottery</a></p>
 					</div>
 				</div>
 			</div>
@@ -46,53 +46,95 @@
 	<div class="span4">
 		<i class=box></i>
 		<h3>Millions of Artisans</h3>
-		<p>2.9 billion people in developing world with basic cellphone service but without access to the Internet.</p>
+		<p>There are <strong>2.9 billion people</strong> in developing world with basic cellphone service, but no Internet. Over 20 million are craftsman and artisans.</p>
 	</div>
 	<div class="span4">
 		<i class=eye></i>
-		<h3>Socially Responsible Buying</h3>
-		<p>Buy handmade goods from around the world. Connect with craftsmen and hear their stories. </p>
+		<h3>Socially Responsible Purchases</h3>
+		<p>Buy handmade goods from around the world. Connect directly with craftsmen and <strong>help improve livelihoods</strong>. </p>
 	</div>
 	<div class="span4">
 		<i class=gear></i>
 		<h3>Three Party Trust</h3>
-		<p>Craftsmen can use SMS to receive confirmation of every part of the sales process. </p>
+		<p>If you've never been online, the Internet can be a scary place. Craftsmen receive <strong>SMS notifications</strong> at every step of the sales process. </p>
 	</div>
 	
 </section>
-<section class="row story">
-	<div class=span12>
+<section id="story" class="row story">
+	<div class="span12">
 		<header class="page-header">
 			<h1>
-				How it works
-				<small>it's not hard at all</small>
+				How CraftEconomy Works
 			</h1>
 		</header>
 	</div>
-	<div class=span9>
-		<h2>Some nice story here</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec neque quis justo aliquam blandit. Quisque interdum felis vel tortor tincidunt molestie. Sed sollicitudin vehicula eros. In hac habitasse platea dictumst. Ut lobortis sapien sit amet est malesuada suscipit.</p>
-		<ul>
-			<li>First point</li>
-			<li>Second point</li>
-			<li>Third point</li>
-			<li>Fourth point</li>
-		</ul>
-		<p>Maecenas egestas magna at eros ultrices egestas. Donec nec erat ante, ac eleifend diam. Ut et purus sem. Aenean sit amet lorem egestas sapien hendrerit tempor.</p>
-		<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+	<div style="margin-left:20px;" class="row">
+		<div style="margin-top:25px;" class="span1">
+			<span class="badge">1</span>
+		</div>
+		<div class="span3">
+			<h2>Craftsman makes the item</h2>
+			<p>Once the item is created, craftsman delivers the item to reseller.</p>
+		</div>
+		<div class="span7">
+			<ul class="thumbnails">
+				<li>
+					<img src="<?php print site_url('assets/themes/crafteconomy/img/hands1.png'); ?>" alt="">
+				</li>
+			</ul>
+		</div>
 	</div>
-	<div class=span3>
-		<ul class="thumbnails">
-			<li class="span3">
-				<a href="<?php print site_url('img/media/normal/Image001.jpg'); ?>" rel="lightbox[album1]" class="thumbnail">
-					<img src="<?php print site_url('assets/themes/crafteconomy/img/media/thumbs/Image001.jpg'); ?>" alt="">
-				</a>
-			</li>
-			<li class="span3">
-				<a href="<?php print site_url('img/media/normal/Image002.jpg'); ?>" rel="lightbox[album1]" class="thumbnail">
-					<img src="<?php print site_url('assets/themes/crafteconomy/img/media/thumbs/Image002.jpg'); ?>" alt="">
-				</a>
-			</li>
-		</ul>
+	<div style="margin-left:20px;" class="row">
+		<div style="margin-top:25px;" class="span1">
+			<span class="badge">2</span>
+		</div>
+		<div class="span3">
+			<h2>Item is processed by reseller</h2>
+			<p>Reseller lists the item on CraftEconomy.
+				Craftsman is notified by SMS when his item is listed, including the listing price. </p>
+		</div>
+		<div class="span7">
+			<ul class="thumbnails">
+				<li>
+					<div >
+					<img src="<?php print site_url('assets/themes/crafteconomy/img/hands2.png'); ?>" alt="">
+				</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div style="margin-left:20px;" class="row">
+		<div style="margin-top:25px;" class="span1">
+			<span class="badge">3</span>
+		</div>
+		<div class="span3">
+			<h2>Item is ordered</h2>
+			<p>Once a buyer places an order on CraftEconomy, the craftsman is notified by SMS and the reseller ships the item. Payment is transferred to reseller. </p>
+		</div>
+		<div class="span7">
+			<ul class="thumbnails">
+				<li>
+					<div >
+						<img src="<?php print site_url('assets/themes/crafteconomy/img/hands3.png'); ?>" alt="">
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div style="margin-left:20px;" class="row">
+		<div style="margin-top:25px;" class="span1">
+			<span class="badge">4</span>
+		</div>
+		<div class="span3">
+			<h2>Everyone wins!</h2>
+			<p>Buyer receives their item. Reseller collects a commission. And craftsman is compensated for his hard work.
+		</div>
+		<div class="span7">
+			<ul class="thumbnails">
+				<li>
+					<img src="<?php print site_url('assets/themes/crafteconomy/img/hands4.png'); ?>" alt="">
+				</li>
+			</ul>
+		</div>
 	</div>
 </section>

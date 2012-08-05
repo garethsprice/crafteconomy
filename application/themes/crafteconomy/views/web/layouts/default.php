@@ -84,8 +84,8 @@
   							New York, NY 10018<br>
   					</div>
   					<div class=span7>
-  						<h3>Sign up for the newsletter!</h3>
-  						<p>If you want to stay up to date on updates and discounts, sign up!</p>
+  						<h3>Join us on our adventure</h3>
+  						<p>Get the latest CraftEconomy news, discounts, specials and more!</p>
   						<form name="ccoptin" action="http://visitor.r20.constantcontact.com/d.jsp" target="_blank" method="post" class="form-horizontal">
   							<div class="control-group">
   								<div class="input-append input-prepend">
