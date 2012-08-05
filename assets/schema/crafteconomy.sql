@@ -139,7 +139,7 @@ DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `seller_id` mediumint(8) unsigned NOT NULL,
-  `intermediary` mediumint(8) unsigned NOT NULL,
+  `intermediary_id` mediumint(8) unsigned NOT NULL,
   `title` varchar(255) NOT NULL DEFAULT '',
   `description` mediumtext DEFAULT NULL,
   `price` decimal(12,2) NOT NULL DEFAULT '0.00',
@@ -158,7 +158,6 @@ CREATE TABLE `orders` (
   `date_purchased` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `date_completed` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `buyer_id` mediumint(8) unsigned NOT NULL,
-  `seller_id` mediumint(8) unsigned NOT NULL,
   `order_status` varchar(255) NOT NULL DEFAULT '',
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
