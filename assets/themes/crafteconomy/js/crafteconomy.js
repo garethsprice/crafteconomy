@@ -20,7 +20,9 @@ $(document).ready(function() {
 	});
 
 	$('.btn_more_info').click(function() {
-		var more_info = $(this).parents('.caption').children('.more-info').slideToggle('fast');
+		var more_info = $(this).parents('.caption').children('.more-info').slideToggle('fast', function() {
+			$('#products').isotope('reLayout');
+		});
 		if ($(this).html() === "More info") {
 			$(this).html('Less info');
 			$(this).removeClass('btn-primary');

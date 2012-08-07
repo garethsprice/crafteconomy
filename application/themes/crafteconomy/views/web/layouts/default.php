@@ -81,9 +81,9 @@
   				<div class=row>
   					<div class=span5>
   						<h3>Contact information</h3>
-  						<p>CraftEconomy<br>
-  							500 7th Ave<br>
-  							New York, NY 10018<br>
+  						<p>Built in 24 hours for eCommerce Hack Day 2012.<br>
+  							<br/>Design by <a href="http://twitter.com/mhhalle">Marie-Hélène Hallé</a><br>
+  							<br/>Development by <a href="http://twitter.com/ibagrak">Ilya Bagrak</a>, <a href="http://twitter.com/abemassry">Abe Massry</a>, <a href="http://www.garethsprice.com/">Gareth Price</a><br>
   					</div>
   					<div class=span7>
   						<h3>Join us on our adventure</h3>
